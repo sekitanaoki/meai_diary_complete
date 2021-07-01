@@ -1,24 +1,82 @@
-# README
+# meal_diary
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## サイト概要
+記録に残しておきたい料理は写真と店名や住所や説明をして記録しておくことができます。
+また、ランキングが搭載されており、いいねの数が多いおすすめの商品を確認することができます。
 
-Things you may want to cover:
+### サイトテーマ
+<おすすめの料理を共有しよう>
 
-* Ruby version
+### テーマを選んだ理由
+<美味しい料理を食べても自分一人の情報にしておくことや、お店の情報
+を忘れてはもったいないと思い、サイトを作りました。
+また、気軽に情報交換の場所になればと考えております。>
 
-* System dependencies
+### ターゲットユーザ
+10代〜40代
 
-* Configuration
+### 主な利用シーン
+ご飯を食べに行った際
 
-* Database creation
+## 設計書
 
-* Database initialization
+# DB設計
 
-* How to run the test suite
+## user テーブル
 
-* Services (job queues, cache servers, search engines, etc.)
+| Column             | Type     | Options     |
+| ------------------ | ------   | ----------- |
+| name               | string   | null: false |
+| email              | string   | null: false |
+| password           | string   | null: false |
+| profile_image      | string   | null: false |
 
-* Deployment instructions
+## products テーブル
 
-* ...
+| Column             | Type     | Options     |
+| ------------------ | ------   | ----------- |
+| user_id            | integer  | null: false |
+| genre_id           | integer  | null: false |
+| shop_name          | string   | null: false |
+| product_image      | string   | null: false |
+| description        | text     | null: false |
+| menu_name          | string   | null: false |
+| address            | string   | null: false |
+| time               | datetime | null: false |
+
+## commnts テーブル
+
+| Column             | Type     | Options     |
+| ------------------ | ------   | ----------- |
+| user_id            | integer  | null: false |
+| product_id         | integer  | null: false |
+| comment            | text     | null: false |
+
+## genre テーブル
+
+| Column             | Type     | Options     |
+| ------------------ | ------   | ----------- |
+| genre_name         | string   | null: false |
+
+## favorites テーブル
+
+| Column             | Type     | Options     |
+| ------------------ | ------   | ----------- |
+| user_id            | integer  | null: false |
+| product_id         | integer  | null: false |
+
+
+
+## チャレンジ要素一覧
+https://docs.google.com/spreadsheets/d/1V_K82IGxj8x-QlkzPk6syIGLDhoC2n0awEX2IK9guAU/edit#gid=0
+
+## 開発環境
+- OS：Linux(CentOS)
+- 言語：HTML,CSS,JavaScript,Ruby,SQL
+- フレームワーク：Ruby on Rails
+- JSライブラリ：jQuery
+- IDE：Cloud9
+
+## 使用素材
+- 外部サービスの画像素材・音声素材を使用した場合は、必ずサービス名とURLを明記してください。
+- 使用しない場合は、使用素材の項目をREADMEから削除してください。
