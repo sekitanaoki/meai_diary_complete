@@ -1,0 +1,12 @@
+  <%= attachment_image_tag @product, :product_image %>
+  <%#<p>投稿ユーザー画像：<%= image_tag('sample-author1.jpg') %ユーザー画像後で登録%>
+  <p>日時：<%= @product.time %></p>
+  <p>ショップ名：<%= @product.shop_name %></p>
+  <p>店舗住所：<%= @product.address %></p>
+  <p>料理名：<%= @product.menu_name %></p>
+  <p>ジャンル：<%= @product.genre.genre_name %></p>
+  <p>説明：<%= @product.description %></p>
+  <p>ユーザーネーム：<%= @product.user.name %></p>
+  <% if @product.user == current_user %>
+    <%= link_to "削除",  product_path(@product), method: :delete %>
+  <% end %>

@@ -13,8 +13,6 @@ class ProductsController < ApplicationController
   def create
     @product = Product.new(product_image_params)
     @product.user_id = current_user.id
-    @product.genre_id = 1
-    binding.pry
     if @product.save
     redirect_to  products_path
     else
@@ -27,15 +25,19 @@ class ProductsController < ApplicationController
   end
 
   def show
+    @product = Product.find(params[:id])
   end
 
   def destroy
+    @product = Product.find(params[:id])
+    @product.destroy
+    redirect_to products_path(@product)
   end
 
   private
 
   def product_image_params
-    params.require(:product).permit(:product_image, :time, :shop_name, :address, :menu_neme, :description,:user_id,:genre_id)
+    params.require(:product).permit(:product_image, :time, :shop_name, :address, :menu_name, :description,:user_id,:genre_id)
   end
 
 end

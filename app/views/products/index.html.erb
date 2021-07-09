@@ -1,8 +1,14 @@
 <% @product_images.each do |product_image| %>
 <div>
-  <%= attachment_image_tag product, :post_image %>
-  <p>投稿ユーザー画像：<%= image_tag('sample-author1.jpg') %></p>
+  <%=link_to  product_path (product_image.id) do %>
+  <%=attachment_image_tag product_image, :product_image %>
+  <% end %>
+  <%#<p>投稿ユーザー画像：<%= image_tag('sample-author1.jpg') %ユーザー画像後で登録%>
+  <p>日時：<%= product_image.time %></p>
   <p>ショップ名：<%= product_image.shop_name %></p>
+  <p>店舗住所：<%= product_image.address %></p>
+  <p>料理名：<%= product_image.menu_name %></p>
+  <p>ジャンル：<%= product_image.genre.genre_name %></p>
   <p>説明：<%= product_image.description %></p>
   <p>ユーザーネーム：<%= product_image.user.name %></p>
 </div>
