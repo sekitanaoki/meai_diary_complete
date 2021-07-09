@@ -77,3 +77,5 @@ gem 'jquery-rails'
 
 gem 'kaminari','~> 1.2.1'
 #ページャ機能の追加
+
+gem 'pry-rails'
