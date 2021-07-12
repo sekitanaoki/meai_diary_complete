@@ -6,6 +6,10 @@ class ProductsController < ApplicationController
   def about
   end
 
+  def ranking
+    
+  end
+
   def new
     @product = Product.new
   end
@@ -26,6 +30,7 @@ class ProductsController < ApplicationController
 
   def show
     @product = Product.find(params[:id])
+    @post_comment = Comment.new
   end
 
   def destroy
@@ -33,6 +38,13 @@ class ProductsController < ApplicationController
     @product.destroy
     redirect_to products_path(@product)
   end
+
+  def  search
+    @product_images=Product.where(genre_id: params[:genre_id])
+    render "index"
+  end
+
+
 
   private
 

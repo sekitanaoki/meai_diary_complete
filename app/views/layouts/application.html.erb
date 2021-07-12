@@ -12,15 +12,32 @@
   <body>
     <% if user_signed_in? %>
       <li>
+        <%= link_to "Top",root_path %>
+        <%= link_to "About", about_products_path %>
+        <%= link_to "Share",products_path %>
+        <%= link_to "Ranking","#" %>
         <%= link_to "ログアウト", destroy_user_session_path, method: :delete %>
+      <div class="search-form">
+        <%= form_with url: search_products_path, method: :get, local: true do |f| %>
+        <%= f.collection_select(:genre_id, Genre.all, :id, :genre_name, prompt: "-- 選択してください --") %>
+        <%= f.submit "検索" %>
+    <% end %>
+      </div>
       </li>
     <% else %>
       <li>
+        <%= link_to "Top",root_path %>
+        <%= link_to "About", about_products_path %>
+        <%= link_to "Share",products_path %>
+        <%= link_to "Ranking", ranking_products_path %>
         <%= link_to "新規登録", new_user_registration_path %>
-      </li>
-      <li>
         <%= link_to "ログイン", new_user_session_path %>
+  <div class="search-form">
+    <%= form_with url: search_products_path, method: :get, local: true do |f| %>
+      <%= f.collection_select(:genre_id, Genre.all, :id, :genre_name, prompt: "-- 選択してください --") %>
+      <%= f.submit "検索" %>
       </li>
+    <% end %>
     <% end %>
     <%= yield %>
   </body>
