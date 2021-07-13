@@ -1,4 +1,10 @@
 <h1>投稿フォーム</h1>
+<% if @product.errors.any? %>
+  <%= @product.errors.count %>件のエラーが発生しました
+  <% @product.errors.full_messages.each do |message| %>
+    <%= message %>
+  <% end %>
+<% end %>
 <%= form_with model:@product, local:true do |f| %>
   <h4>画像</h4>
   <%= f.attachment_field :product_image %>

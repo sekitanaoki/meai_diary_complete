@@ -1,1 +1,12 @@
 <h1>rankingページ</h1>
+
+  <% @rank.each do |rank| %>
+  <div>
+
+    <p><%= rank.shop_name %></p>
+    <p><%= rank.menu_name %></p>
+    <p><%= rank.description %></p>
+  </div>
+  <% end %>
+
+

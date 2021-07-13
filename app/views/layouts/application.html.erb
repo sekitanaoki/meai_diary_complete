@@ -15,7 +15,9 @@
         <%= link_to "Top",root_path %>
         <%= link_to "About", about_products_path %>
         <%= link_to "Share",products_path %>
-        <%= link_to "Ranking","#" %>
+        <%= link_to "Ranking",ranking_products_path %>
+        <%= link_to "投稿",new_product_path %>
+        <%= link_to 'マイページ', user_path(current_user.id) %>
         <%= link_to "ログアウト", destroy_user_session_path, method: :delete %>
       <div class="search-form">
         <%= form_with url: search_products_path, method: :get, local: true do |f| %>
@@ -29,7 +31,7 @@
         <%= link_to "Top",root_path %>
         <%= link_to "About", about_products_path %>
         <%= link_to "Share",products_path %>
-        <%= link_to "Ranking", ranking_products_path %>
+        <%= link_to "Ranking",  new_user_registration_path %>
         <%= link_to "新規登録", new_user_registration_path %>
         <%= link_to "ログイン", new_user_session_path %>
   <div class="search-form">

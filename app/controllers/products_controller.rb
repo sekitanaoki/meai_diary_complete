@@ -7,7 +7,10 @@ class ProductsController < ApplicationController
   end
 
   def ranking
-    
+  
+     @rank = Product.find(Favorite.group(:product_id).order('count(product_id) desc').limit(3).pluck(:product_id))
+
+
   end
 
   def new
@@ -20,12 +23,13 @@ class ProductsController < ApplicationController
     if @product.save
     redirect_to  products_path
     else
-    redirect_to  new_product_path
+    render:new
     end
   end
 
   def index
      @product_images = Product.all
+     @product_images = Product.page(params[:page]).reverse_order
   end
 
   def show
@@ -41,6 +45,8 @@ class ProductsController < ApplicationController
 
   def  search
     @product_images=Product.where(genre_id: params[:genre_id])
+    @product_images = @product_images.page(params[:page]).reverse_order
+
     render "index"
   end
 

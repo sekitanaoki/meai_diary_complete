@@ -9,8 +9,8 @@ Rails.application.routes.draw do
       collection do
       get :about
       get :ranking
-
       get 'search' => 'products#search'
     end
   end
+   resources :users, only: [:show,:edit,:update]
 end
