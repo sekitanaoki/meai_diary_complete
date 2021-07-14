@@ -10,19 +10,8 @@
   <% if @product.user == current_user %>
     <%= link_to "削除",  product_path(@product), method: :delete %>
   <% end %>
-  <% if @product.favorited_by?(current_user) %>
-    <p>
-      <%= link_to product_favorites_path(@product), method: :delete do %>
-        ♥いいね(<%= @product.favorites.count %>)
-      <% end %>
-    </p>
-    <% else %>
-    <p>
-      <%= link_to product_favorites_path(@product), method: :post do %>
-        ♡いいね(<%= @product.favorites.count %>)
-      <% end %>
-    </p>
-  <% end %>
+
+ <%= render 'favorites/favorite-btn', product: @product%>
 
 <div class="comments">
 <p>コメント件数：<%= @product.comments.count %></p>
