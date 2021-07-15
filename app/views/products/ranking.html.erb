@@ -1,11 +1,12 @@
 <h1>rankingページ</h1>
 
-  <% @rank.each do |rank| %>
+  <% @rank.each.with_index(1) do |rank,i| %>
+  <h2>✨第<%= i %>位✨</h2>
   <div>
-
-    <p><%= rank.shop_name %></p>
-    <p><%= rank.menu_name %></p>
-    <p><%= rank.description %></p>
+    <p><%= attachment_image_tag rank, :product_image %></p>
+    <p>店舗名：<%= rank.shop_name %></p>
+    <p>料理名：<%= rank.menu_name %></p>
+    <p>説明：<%= rank.description %></p>
   </div>
   <% end %>
 

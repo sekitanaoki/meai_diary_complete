@@ -4,13 +4,21 @@ class CommentsController < ApplicationController
     post_image = Product.find(params[:product_id])
     comment = current_user.comments.new(comment_params)
     comment.product_id = post_image.id
-    comment.save
+    if comment.save
     redirect_to products_path(post_image.id)
+    else
+    @error_comment = comment
+    @product = Product.find(params[:product_id])
+    @post_comment = Comment.new
+    render  "products/show"
+    end
   end
 
+
+
   def destroy
-    Comment.find_by(id: params[:id], product_image_id: params[:product_image_id]).destroy
-    redirect_to product_path(params[:product_image_id])
+    @comment = Comment.find_by(id: params[:id], product_id: params[:product_id]).destroy
+    redirect_to products_path(@comment)
   end
 
 

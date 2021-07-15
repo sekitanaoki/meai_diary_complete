@@ -7,8 +7,10 @@ class ProductsController < ApplicationController
   end
 
   def ranking
-
+    
      @rank = Product.find(Favorite.group(:product_id).order('count(product_id) desc').limit(3).pluck(:product_id))
+
+
   end
 
   def new
@@ -31,6 +33,7 @@ class ProductsController < ApplicationController
   end
 
   def show
+
     @product = Product.find(params[:id])
     @post_comment = Comment.new
   end

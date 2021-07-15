@@ -4,6 +4,7 @@ class Product < ApplicationRecord
   belongs_to :user
   belongs_to :genre
   attachment :product_image  # ここを追加（_idは含めない）
+ 
 
   validates :shop_name, presence: true
   validates :product_image, presence: true

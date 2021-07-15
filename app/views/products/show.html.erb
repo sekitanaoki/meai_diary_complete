@@ -1,5 +1,7 @@
-  <p>投稿ユーザー画像：<%= image_tag'no_image.jpg' %>
+  <p><%= attachment_image_tag @product.user, :profile_image, :fill, 100, 100, fallback: "no_image.jpg",size:'100x100'%>
+  <!--投稿ユーザー画像-->
   <%= attachment_image_tag @product, :product_image %>
+　<!--投稿画像-->
   <p>日時：<%= @product.time %></p>
   <p>ショップ名：<%= @product.shop_name %></p>
   <p>店舗住所：<%= @product.address %></p>
@@ -21,7 +23,7 @@
   <%= comment.created_at.strftime('%Y/%m/%d') %><%= comment.comment %>
   <% if comment.user == current_user %>
   <div class="comment-delete">
-    <%= link_to "削除", product_path(@product), method: :delete %>
+    <%= link_to "削除", product_comment_path(@product,comment),method: :delete %>
   </div>
   <% end %>
 
@@ -30,6 +32,16 @@
 </div>
 <div class="new-comment">
 <%= form_with(model:[@product, @post_comment], local: true) do |f| %>
+<% if @error_comment.present? %>
+    <div id="error_explanation">
+      <h2><%= @error_comment.errors.count %>件のエラーが発生しました。</h2>
+      <ul>
+        <% @error_comment.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
   <%= f.text_area :comment, rows:'5',placeholder: "コメントをここに" %>
   <%= f.submit "送信する" %>
 <% end %>
