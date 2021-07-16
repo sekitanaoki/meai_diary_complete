@@ -4,10 +4,11 @@
 //= require action_cable
 //= require_self
 //= require_tree ./channels
-
+/*gl
 (function() {
   this.App || (this.App = {});
 
-  App.cable = ActionCable.createConsumer();
+App.cable = ActionCable.createConsumer();
 
 }).call(this);
+

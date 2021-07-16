@@ -8,7 +8,7 @@ class CommentsController < ApplicationController
     redirect_to products_path(post_image.id)
     else
     @error_comment = comment
-    @product = Product.find(params[:product_id])
+     @product = Product.find(params[:product_id])
     @post_comment = Comment.new
     render  "products/show"
     end

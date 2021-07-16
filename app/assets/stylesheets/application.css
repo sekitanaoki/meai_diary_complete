@@ -9,7 +9,42 @@
  * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
  * files in this directory. Styles in this file should be added after the last require_* statement.
  * It is generally better to create a new file per style scope.
- *
+ *= require simple_calendar
  *= require_tree .
  *= require_self
  */
+/* 高さを指定することにより画像が表示される */
+#box{
+  height: 400px;
+}
+.image1 {
+  background-image: url(image1.jpeg);
+}
+.image5 {
+  background-image: url(image5.jpeg);
+}
+.image3 {
+  background-image: url(image3.jpeg);
+}
+.image4 {
+  background-image: url(image4.jpeg);
+}
+
+.calendar{
+  width :900px;
+  height:600px;
+  margin:100px auto 0;
+  /*カレンダーの位置と大きさ*/
+}
+
+.logo-image{
+  width:100px;
+  height:100px;
+  /*ロゴの大きさ指定*/
+}
+
+.navbar{
+  background-color:#D2CEC6;
+  /*navarの色指定*/
+}
+

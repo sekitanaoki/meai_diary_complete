@@ -1,3 +1,39 @@
 // Place all the styles related to the products controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+.box{
+  padding:20px 400px;
+}
+
+.product-index{
+  display:flex;
+  margin:20px 20px;
+  box-shadow: 0 10px 25px 0 rgba(0, 0, 0, .5);
+  // index画像に影を作成
+}
+
+.product_image{
+  width:400px;
+}
+
+.product-text{
+  padding-top:100px;
+  padding-left:100px;
+}
+
+.paginate{
+  padding:10px;
+}
+
+.profile{
+  border-radius: 50%;
+  border: 3px solid #141414;
+  // プロフィール画像を丸くし、枠線追加
+}
+
+.collapse{
+  display:flex;
+  justify-content:flex-end;
+  // navarを右端に移動
+}
