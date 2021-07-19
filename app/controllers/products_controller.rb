@@ -7,7 +7,7 @@ class ProductsController < ApplicationController
   end
 
   def ranking
-    
+
      @rank = Product.find(Favorite.group(:product_id).order('count(product_id) desc').limit(3).pluck(:product_id))
 
 
@@ -29,14 +29,15 @@ class ProductsController < ApplicationController
 
   def index
      @product_images = Product.all
-     @product_images = Product.page(params[:page]).reverse_order
+     @product_images = Product.page(params[:page]).per(6).reverse_order
+    # per(6).reverse_orderページ表示数/降順
   end
 
   def show
 
     @product = Product.find(params[:id])
     @post_comment = Comment.new
-    
+
   end
 
   def destroy
