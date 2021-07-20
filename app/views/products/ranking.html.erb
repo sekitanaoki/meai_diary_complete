@@ -1,10 +1,15 @@
 <div class ="product-ranking">
-<h1>rankingページ</h1>
+
 
   <% @rank.each.with_index(1) do |rank,i| %>
+  <div class="ranking">
   <h2>✨第<%= i %>位✨</h2>
-  <div>
-    <p><%= attachment_image_tag rank, :product_image %></p>
+    <p>
+      <%=link_to  product_path (rank.id) do %>
+      <%=attachment_image_tag rank, :product_image ,size:'200x150'%>
+    <% end %>
+    </p>
+    
     <p>店舗名：<%= rank.shop_name %></p>
     <p>料理名：<%= rank.menu_name %></p>
     <p>説明：<%= rank.description %></p>

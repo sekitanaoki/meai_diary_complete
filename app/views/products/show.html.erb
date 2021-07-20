@@ -50,14 +50,15 @@
 
   <% if @product.user == current_user %>
     <%= link_to "削除",  product_path(@product), method: :delete %>
+    <%= link_to "編集",  edit_product_path(@product) %>
   <% end %>
+  
 
  <%= render 'favorites/favorite-btn', product: @product%>
 
 <div class="comments">
 <p>コメント件数：<%= @product.comments.count %></p>
 <% @product.comments.each do |comment| %>
-  <p> <%#= attachment_image_tag @user, :profile_image, :fill, 100, 100, format: 'jpeg', fallback: "no_image.jpg" %></p>
   <%= comment.user.name %>
   <%= comment.created_at.strftime('%Y/%m/%d') %><%= comment.comment %>
   <% if comment.user == current_user %>
@@ -65,8 +66,6 @@
     <%= link_to "削除", product_comment_path(@product,comment),method: :delete %>
   </div>
   <% end %>
-
-
 <% end %>
 </div>
 <div class="new-comment">

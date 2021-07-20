@@ -7,9 +7,9 @@ class ProductsController < ApplicationController
   end
 
   def ranking
-
+     
+    
      @rank = Product.find(Favorite.group(:product_id).order('count(product_id) desc').limit(3).pluck(:product_id))
-
 
   end
 
@@ -40,6 +40,10 @@ class ProductsController < ApplicationController
 
   end
 
+  def edit
+     @product = Product.find(params[:id])
+  end
+
   def destroy
     @product = Product.find(params[:id])
     @product.destroy
@@ -51,6 +55,15 @@ class ProductsController < ApplicationController
     @product_images = @product_images.page(params[:page]).reverse_order
 
     render "index"
+  end
+
+  def update
+     @product = Product.find(params[:id])
+     if @product.update(product_image_params)
+     redirect_to product_path(@product)
+     else
+     render :edit
+     end
   end
 
 

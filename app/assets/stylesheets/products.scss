@@ -39,7 +39,7 @@
 .collapse{
   display:flex;
   justify-content:flex-end;
-  
+
   // navarを右端に移動
 }
 
@@ -55,6 +55,9 @@
 
 .product-ranking{
   margin:20px;
+  display:flex;
+  justify-content:space-evenly;
+
 }
 // rankingページ周りに余白
 
@@ -85,8 +88,24 @@
 }
 
 
+.nav-link{
+  font-size:15px;
 
-  
+}
 
 
+.current{
+   box-shadow: 0 10px 25px 0 rgba(0, 0, 0, .5);
+
+}
+
+.ranking{
+   box-shadow: 0 10px 25px 0 rgba(0, 0, 0, .5);
+   padding:20px;
+   width:300px;
+   margin:0 auto;
+}
+.ranking p{
+  text-align:center;
+}
 
