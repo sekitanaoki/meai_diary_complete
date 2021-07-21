@@ -1,5 +1,5 @@
 <div class="sign_up">
-<h2>Sign up</h2>
+<h2><%= image_tag'logo6.png',size:'50x30'%>Sign up</h2>
 
 <%= form_with model: @user, url: user_registration_path, id: 'new_user', class: 'new_user', local: true do |f| %>
   <%= render "devise/shared/error_messages", resource: resource %>
