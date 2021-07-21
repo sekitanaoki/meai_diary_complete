@@ -17,7 +17,7 @@
         <!--table tag オプション-->
           <tr>
             <td>【日時】</td>
-            <td><%= product_image.time %></td>
+            <td><%= product_image.time.strftime("%Y-%m-%d %H:%M")%></td>
           </tr>
           <tr>
             <td>【店舗名】</td>
@@ -48,7 +48,13 @@
             <!--calspan=結合-->
           </tr>
           <tr>
-            <td colspan="2"><%= link_to " コメント(#{product_image.comments.count})",product_path(product_image.id) %></td>
+            <% if !current_user %>
+              <%= link_to new_user_session_path  do %>
+                <td><%= link_to " コメント(#{product_image.comments.count})", new_user_session_path %> </td>
+              <% end %>
+            <% else %>
+              <td colspan="2"><%= link_to " コメント(#{product_image.comments.count})",product_path(product_image.id) %></td>
+            <% end %>
           </tr>
         </table>
       </div>

@@ -6,4 +6,5 @@ Genre.create(genre_name:"肉")
 Genre.create(genre_name:"魚")
 Genre.create(genre_name:"野菜")
 Genre.create(genre_name:"フルーツ")
+Genre.create(genre_name:"スイーツ")
 #ジャンルの選択項目

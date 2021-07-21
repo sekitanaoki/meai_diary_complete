@@ -1,5 +1,6 @@
 class CommentsController < ApplicationController
 
+
   def create
     post_image = Product.find(params[:product_id])
     comment = current_user.comments.new(comment_params)

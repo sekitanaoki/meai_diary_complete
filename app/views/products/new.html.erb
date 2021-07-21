@@ -10,7 +10,7 @@
     <h6>画像</h6>
       <%= f.attachment_field :product_image %>
     <h6>日時</h6>
-      <%= f.datetime_select :time, :default => Time.now + 9.hour%>
+      <%= f.datetime_field :time%>
     <h6>店舗名</h6>
       <%= f.text_field :shop_name %>
     <h6>店舗住所</h6>

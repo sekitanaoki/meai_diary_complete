@@ -24,7 +24,7 @@
         <!--table tag オプション-->
           <tr>
             <td>【日時】</td>
-            <td><%= product_image.time %></td>
+            <td><%= product_image.time.strftime("%Y-%m-%d %H:%M") %></td>
           </tr>
           <tr>
             <td>【店舗名】</td>
