@@ -7,10 +7,7 @@ class ProductsController < ApplicationController
   end
 
   def ranking
-     
-    
-     @rank = Product.find(Favorite.group(:product_id).order('count(product_id) desc').limit(3).pluck(:product_id))
-
+    @rank = Product.find(Favorite.group(:product_id).order('count(product_id) desc').limit(3).pluck(:product_id))
   end
 
   def new
@@ -28,20 +25,18 @@ class ProductsController < ApplicationController
   end
 
   def index
-     @product_images = Product.all
-     @product_images = Product.page(params[:page]).per(6).reverse_order
+    @product_images = Product.all
+    @product_images = Product.page(params[:page]).per(6).reverse_order
     # per(6).reverse_orderページ表示数/降順
   end
 
   def show
-
     @product = Product.find(params[:id])
     @post_comment = Comment.new
-
   end
 
   def edit
-     @product = Product.find(params[:id])
+    @product = Product.find(params[:id])
   end
 
   def destroy
@@ -50,19 +45,18 @@ class ProductsController < ApplicationController
     redirect_to products_path(@product)
   end
 
-  def  search
+  def search
     @product_images=Product.where(genre_id: params[:genre_id])
     @product_images = @product_images.page(params[:page]).reverse_order
-
     render "index"
   end
 
   def update
      @product = Product.find(params[:id])
      if @product.update(product_image_params)
-     redirect_to product_path(@product)
+       redirect_to product_path(@product)
      else
-     render :edit
+       render :edit
      end
   end
 

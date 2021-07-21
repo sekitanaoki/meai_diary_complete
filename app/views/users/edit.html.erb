@@ -1,5 +1,5 @@
 <div class="uses-edit">
-  <h2><%= image_tag'log4.png',size:'40x40'%>プロフィール編集</h2>
+  <h2><%= image_tag'log4.png',size:'40x40'%><b>プロフィール編集</b></h2>
   <%= form_with model:@user, local:true do |f| %>
     <label for="inputName">Name</label>
     <%= f.text_field :name, autofocus: true, id:"inputName", placeholder:"名前"%>
