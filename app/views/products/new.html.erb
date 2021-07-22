@@ -1,16 +1,26 @@
-<h1>投稿フォーム</h1>
-<%= form_with model:@product, local:true do |f| %>
-  <h4>画像</h4>
-  <%= f.attachment_field :product_image %>
-  <h4>日時</h4>
-  <%= f.datetime_select :time %>
-  <h4>ショップ名</h4>
-  <%= f.text_field :shop_name %>
-  <h4>店舗住所</h4>
-  <%= f.text_field :address%>
-  <h4>料理名</h4>
-  <%= f.text_field :menu_neme %>
-  <h4>説明</h4>
-  <%= f.text_area :description %>
-  <%= f.submit '投稿' %>
-<% end %>
+<div class ="box">
+  <h2><%= image_tag'log5.png',size:'50x30'%><b>投稿フォーム</b></h2>
+  <% if @product.errors.any? %>
+    <h2><%= @product.errors.count %>件のエラーが発生しました</h2>
+    <% @product.errors.full_messages.each do |message| %>
+      <%= message %>
+    <% end %>
+  <% end %>
+  <%= form_with model:@product, local:true do |f| %>
+    <h6>画像</h6>
+      <%= f.attachment_field :product_image %>
+    <h6>日時</h6>
+      <%= f.datetime_field :time%>
+    <h6>店舗名</h6>
+      <%= f.text_field :shop_name %>
+    <h6>店舗住所</h6>
+      <%= f.text_field :address%>
+    <h6>料理名</h6>
+      <%= f.text_field :menu_name%>
+    <h6>ジャンル</h6>
+      <%= f.collection_select(:genre_id, Genre.all, :id, :genre_name, prompt: "-- 選択してください --") %>
+    <h6>説明</h6>
+      <%= f.text_area :description %>
+    <%= f.submit '投稿' %>
+  <% end %>
+</div>

@@ -22,7 +22,7 @@ ActiveRecord::Schema.define(version: 2021_07_08_055702) do
 
   create_table "favorites", force: :cascade do |t|
     t.integer "user_id", null: false
-    t.integer "products_id", null: false
+    t.integer "product_id", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
@@ -34,14 +34,14 @@ ActiveRecord::Schema.define(version: 2021_07_08_055702) do
   end
 
   create_table "products", force: :cascade do |t|
-    t.integer "user_id"
-    t.integer "genre_id"
-    t.string "product_image_id"
-    t.string "shop_name"
-    t.text "description"
-    t.string "menu_neme"
-    t.string "address"
-    t.datetime "time"
+    t.integer "user_id", null: false
+    t.integer "genre_id", null: false
+    t.string "product_image_id", default: "", null: false
+    t.string "shop_name", default: "", null: false
+    t.text "description", default: "", null: false
+    t.string "menu_name", default: "", null: false
+    t.string "address", default: "", null: false
+    t.datetime "time", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

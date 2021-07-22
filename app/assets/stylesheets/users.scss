@@ -1,3 +1,40 @@
-// Place all the styles related to the users controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+.sign_up{
+  padding:0 450px;
+}
+.log_in{
+  padding:0 450px;
+}
+
+.users-show{
+  margin:20px;
+
+}
+// showページ周りに余白
+
+.postedcontent{
+  width:280px;
+  height:350px;
+  padding:20px;
+  text-align:center;
+  margin:10px 10px;
+  box-shadow: 0 10px 25px 0 rgba(0, 0, 0, .5);
+
+}
+.users-text{
+ padding-top:10px;
+  padding-left:30px;
+  font-size:10px;
+}
+
+.user-content{
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:space-evenly;
+}
+.profile-container{
+ padding-left:70px;
+}
+
+.uses-edit{
+   text-align:center;
+}

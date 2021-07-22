@@ -1,0 +1,158 @@
+<div class = "product-show">
+  <div class="map">
+    <%= attachment_image_tag @product, :product_image,size:'400x300' %>
+    <table>
+      <tr>
+        <td><input type="hidden" id="keyword" value=<%=@product.address%>></td>
+        <td><button id="search">地図を表示</button>
+        <div id="target"></div></td>
+      </tr>
+    </table>
+  </div>
+<!--投稿画像-->
+  <div class="Placement">
+    <table  cellpadding="3px">
+    <!--table tag オプション-->
+      <tr>
+        <td>【日時】</td>
+        <td><%= @product.time.strftime("%Y-%m-%d %H:%M")%></td>
+      </tr>
+      <tr>
+        <td>【店舗名】</td>
+        <td><%= @product.shop_name %></td>
+      </tr>
+      <tr>
+        <td>【店舗住所】</td>
+        <td><%= @product.address %></td>
+      </tr>
+      <tr>
+        <td>【料理名】</td>
+        <td><%= @product.menu_name %></td>
+      </tr>
+      <tr>
+        <td>【ジャンル】</td>
+        <td><%= @product.genre.genre_name %></td>
+      </tr>
+      <tr>
+        <td>【説明】</td>
+        <td><%= @product.description %></td>
+      </tr>
+      <tr>
+        <td><%= attachment_image_tag @product.user, :profile_image, :fill, 50, 50, fallback: "no_image.jpg",size:'50x50',class:"profile"%></td>
+        <td><%= @product.user.name %></td>
+      </tr>
+    </table>
+    <% if @product.user == current_user %>
+      <%= link_to "削除",  product_path(@product), method: :delete %>
+      <%= link_to "編集",  edit_product_path(@product) %>
+    <% end %>
+    <%= render 'favorites/favorite-btn', product: @product%>
+    <div class="comments">
+    <p>コメント件数：<%= @product.comments.count %></p>
+      <% @product.comments.each do |comment| %>
+           <%= comment.created_at.strftime('%Y/%m/%d') %><br>
+        　 <%= image_tag'log2.png',size:'20x20'%><%= comment.user.name %>　<%= comment.comment %><br>
+        <% if comment.user == current_user %>
+          <div class="comment-delete">
+            <%= link_to "削除", product_comment_path(@product,comment),method: :delete %>
+          </div>
+        <% end %>
+      <% end %>
+    </div>
+    <div class="new-comment">
+      <%= form_with(model:[@product, @post_comment], local: true) do |f| %>
+        <%= f.text_area :comment,size:"30x5" , rows:'5',placeholder: "コメントをここに" %>
+        <%= f.submit "送信する" %>
+      <% end %>
+    </div>
+  </div>
+  <script src="https://maps.googleapis.com/maps/api/js?language=ja&region=JP&key=AIzaSyDKzseR5ClUhz1EngzYkkARRr2bJoI7Nc0&callback=initMap" async defer></script>
+  <script>
+    var map;
+    var marker;
+    var infoWindow;
+    function initMap() {
+    // 検索実行ボタンが押下されたとき
+    document.getElementById('search').addEventListener('click', function() {
+    var place = document.getElementById('keyword').value;
+    var geocoder = new google.maps.Geocoder();      // geocoderのコンストラクタ
+    geocoder.geocode({
+    address: place
+    }, function(results, status) {
+    if (status == google.maps.GeocoderStatus.OK) {
+    //マップ初期表示の位置設定
+    var target = document.getElementById('target');
+    var centerp = results[0].geometry.location;
+    //マップ表示
+    map = new google.maps.Map(target, {
+    center: centerp,
+    zoom: 15,
+    });
+    var bounds = new google.maps.LatLngBounds();
+
+    for (var i in results) {
+    if (results[0].geometry) {
+    // 緯度経度を取得
+    var latlng = results[0].geometry.location;
+    // 住所を取得
+    var address = results[0].formatted_address;
+    // 検索結果地が含まれるように範囲を拡大
+    bounds.extend(latlng);
+    // マーカーのセット
+    setMarker(latlng);
+    // マーカーへの吹き出しの追加
+    setInfoW(place, latlng, address);
+    // マーカーにクリックイベントを追加
+    markerEvent();
+    }
+    }
+    } else if (status == google.maps.GeocoderStatus.ZERO_RESULTS) {
+              alert("見つかりません");
+            } else {
+              console.log(status);
+              alert("エラー発生");
+            }
+          });
+
+        });
+
+
+      }
+
+      // マーカーのセットを実施する
+      function setMarker(setplace) {
+        // 既にあるマーカーを削除
+        deleteMakers();
+
+        var iconUrl = 'http://maps.google.com/mapfiles/ms/icons/blue-dot.png';
+          marker = new google.maps.Marker({
+            position: setplace,
+            map: map,
+            icon: iconUrl
+          });
+        }
+
+        //マーカーを削除する
+        function deleteMakers() {
+          if(marker != null){
+            marker.setMap(null);
+          }
+          marker = null;
+        }
+
+        // マーカーへの吹き出しの追加
+        function setInfoW(place, latlng, address) {
+          infoWindow = new google.maps.InfoWindow({
+          content: "<a href='http://www.google.com/search?q=" + place + "' target='_blank'>" + place + "</a><br><br>" + latlng + "<br><br>" + address + "<br><br><a href='http://www.google.com/search?q=" + place + "&tbm=isch' target='_blank'>画像検索 by google</a>"
+        });
+      }
+
+      // クリックイベント
+      function markerEvent() {
+        marker.addListener('click', function() {
+          infoWindow.open(map, marker);
+        });
+      }
+
+    </script>
+</div>

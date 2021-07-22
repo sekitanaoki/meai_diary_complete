@@ -1,9 +1,66 @@
-<% @product_images.each do |product_image| %>
-<div>
-  <%= attachment_image_tag product, :post_image %>
-  <p>投稿ユーザー画像：<%= image_tag('sample-author1.jpg') %></p>
-  <p>ショップ名：<%= product_image.shop_name %></p>
-  <p>説明：<%= product_image.description %></p>
-  <p>ユーザーネーム：<%= product_image.user.name %></p>
+ <div class="array">
+  <% @product_images.each do |product_image| %>
+    <div class="product-index">
+      <div class= "product_image">
+        <% if !current_user   %>
+          <%= link_to new_user_session_path  do %>
+            <%=attachment_image_tag product_image, :product_image,size:'200x100'%>
+          <% end %>
+        <% else %>
+          <%=link_to  product_path (product_image.id) do %>
+            <%=attachment_image_tag product_image, :product_image ,size:'200x100'%>
+          <% end %>
+        <% end %>
+      </div>
+      <div class="product-text">
+        <table  cellpadding="3px">
+        <!--table tag オプション-->
+          <tr>
+            <td>【日時】</td>
+            <td><%= product_image.time.strftime("%Y-%m-%d %H:%M")%></td>
+          </tr>
+          <tr>
+            <td>【店舗名】</td>
+            <td><%= product_image.shop_name %></td>
+          </tr>
+          <tr>
+            <td>【店舗住所】</td>
+            <td><%= product_image.address %></td>
+          </tr>
+          <tr>
+            <td>【料理名】</td>
+            <td><%= product_image.menu_name %></td>
+          </tr>
+          <tr>
+            <td>【ジャンル】</td>
+            <td><%= product_image.genre.genre_name %></td>
+          </tr>
+          <tr>
+            <td>【説明】</td>
+            <td><%= product_image.description %></td>
+          </tr>
+          <tr>
+            <td><%= attachment_image_tag product_image.user, :profile_image, :fill, 20, 20, fallback: "no_image.jpg",size:'20x20',class:"profile"%></td>
+            <td><%= product_image.user.name %></td>
+          </tr>
+          <tr>
+            <td colspan="2">♥いいね(<%= product_image.favorites.count%>)</td>
+            <!--calspan=結合-->
+          </tr>
+          <tr>
+            <% if !current_user %>
+              <%= link_to new_user_session_path  do %>
+                <td><%= link_to " コメント(#{product_image.comments.count})", new_user_session_path %> </td>
+              <% end %>
+            <% else %>
+              <td colspan="2"><%= link_to " コメント(#{product_image.comments.count})",product_path(product_image.id) %></td>
+            <% end %>
+          </tr>
+        </table>
+      </div>
+    </div>
+  <% end %>
 </div>
-<% end %>
+<div class="paginate">
+  <%= paginate @product_images %>
+</div>

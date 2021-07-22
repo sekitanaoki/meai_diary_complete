@@ -79,3 +79,7 @@ gem 'kaminari','~> 1.2.1'
 #ページャ機能の追加
 
 gem 'pry-rails'
+
+gem "simple_calendar", "~> 2.4"
+
+

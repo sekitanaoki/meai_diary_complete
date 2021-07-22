@@ -1,0 +1,18 @@
+<div class ="favorite-btn">
+  <% if user_signed_in? %>
+  <% if product.favorited_by?(current_user) %>
+    <p>
+      <%= link_to product_favorites_path(product), method: :delete ,remote: true do %>
+        ♥いいね(<%= product.favorites.count %>)
+      <% end %>
+    </p>
+  <% else %>
+    <p>
+      <%= link_to product_favorites_path(product), method: :post ,remote: true do %>
+        ♡いいね(<%= product.favorites.count %>)
+      <% end %>
+    </p>
+  <% end %>
+  <% end %>
+</div>
+

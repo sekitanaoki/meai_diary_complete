@@ -1,3 +1,104 @@
 // Place all the styles related to the products controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+.box{
+  padding:0 400px;
+}
+
+.product-index{
+  width:280px;
+  height:350px;
+  padding:20px;
+  margin:20px 20px;
+  box-shadow: 0 10px 25px 0 rgba(0, 0, 0, .5);
+  // index画像に影を作成
+}
+
+.product_image{
+  margin-left:10px;
+}
+
+.product-text{
+  padding-top:10px;
+  padding-left:30px;
+  font-size:10px;
+}
+
+.paginate{
+  padding:10px;
+}
+
+.profile{
+  border-radius: 50%;
+
+  // プロフィール画像を丸くし、枠線追加
+}
+
+.collapse{
+  display:flex;
+  justify-content:flex-end;
+
+  // navarを右端に移動
+}
+
+.product-show{
+  box-shadow: 0 10px 25px 0 rgba(0, 0, 0, .5);
+  margin:20px;
+  display:flex;
+  // background-color:#FEFFEB;
+
+
+}
+// showページ周りに余白
+
+.product-ranking{
+  margin:20px;
+  display:flex;
+  justify-content:space-evenly;
+
+}
+// rankingページ周りに余白
+
+
+
+
+.array{
+
+  display:flex;
+  flex-wrap:wrap;
+  justify-content: center;
+  width:100%;
+  height:100%;
+  // background-color:#FEFFEB;
+  // index背景色
+
+}
+
+.Placement{
+  width:500px;
+  margin-left:50px;
+  font-size:10px;
+}
+
+
+.nav-link{
+  font-size:15px;
+
+}
+
+
+.current{
+   box-shadow: 0 10px 25px 0 rgba(0, 0, 0, .5);
+
+}
+
+.ranking{
+   box-shadow: 0 10px 25px 0 rgba(0, 0, 0, .5);
+   padding:20px;
+   width:300px;
+   margin:0 auto;
+}
+.ranking p{
+  text-align:center;
+}
+

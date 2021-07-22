@@ -1,0 +1,40 @@
+<div class ="product-ranking">
+  <% @rank.each.with_index(1) do |rank,i| %>
+    <div class="ranking">
+      <h2><b><%= image_tag'log2.png',size:'50x50'%>第<%= i %>位</b></h2>
+        <p>
+          <% if !current_user   %>
+              <%=link_to new_user_session_path do%>
+              <%=attachment_image_tag rank, :product_image ,size:'200x150'%>
+            <% end %>
+          <% else %>
+
+             <%=link_to  product_path (rank.id) do %>
+              <%=attachment_image_tag rank, :product_image ,size:'200x150'%>
+          <% end %>
+          <% end %>
+
+
+
+
+        </p>
+      <table  cellpadding="3px">
+        <!--table tag オプション-->
+        <tr>
+          <th>【店舗名】</th>
+          <th><%= rank.shop_name %></th>
+        </tr>
+        <tr>
+          <th>【料理名】</th>
+          <th><%= rank.menu_name %></th>
+        </tr>
+        <tr>
+          <th>【説明】</th>
+          <th><%= rank.description %></th>
+        </tr>
+      </table>
+    </div>
+  <% end %>
+</div>
+
+

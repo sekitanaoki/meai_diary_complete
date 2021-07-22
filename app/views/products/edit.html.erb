@@ -1,0 +1,26 @@
+<div class ="box">
+  <h2><%= image_tag'logo8.png',size:'50x30'%><b>投稿フォーム</b></h2>
+  <% if @product.errors.any? %>
+    <h4><%= @product.errors.count %>件のエラーが発生しました</h4>
+    <% @product.errors.full_messages.each do |message| %>
+      <%= message %><br>
+    <% end %>
+  <% end %>
+  <%= form_with model:@product, local:true do |f| %>
+    <h6>画像</h6>
+      <%= f.attachment_field :product_image %>
+    <h6>日時</h6>
+      <%= f.datetime_select :time, :default => Time.now + 9.hour%>
+    <h6>ショップ名</h6>
+      <%= f.text_field :shop_name %>
+    <h6>店舗住所</h6>
+      <%= f.text_field :address%>
+    <h6>料理名</h6>
+      <%= f.text_field :menu_name%>
+    <h6>ジャンル</h6>
+      <%= f.collection_select(:genre_id, Genre.all, :id, :genre_name, prompt: "-- 選択してください --") %>
+    <h6>説明</h6>
+      <%= f.text_area :description %>
+    <%= f.submit '保存' %>
+  <% end %>
+</div>

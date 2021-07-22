@@ -1,0 +1,3 @@
+$("#.comments-count").html("コメント件数：<%= @product.comments.count %>");
+$(".new-comments").html("<%= j(render 'comments/new-comment', product: @product, post_comment: @post_comment) %>");
+$("#comment_comment").val("");

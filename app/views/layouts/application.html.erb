@@ -7,21 +7,82 @@
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
   </head>
 
   <body>
-    <% if user_signed_in? %>
-      <li>
-        <%= link_to "ログアウト", destroy_user_session_path, method: :delete %>
-      </li>
-    <% else %>
-      <li>
-        <%= link_to "新規登録", new_user_registration_path %>
-      </li>
-      <li>
-        <%= link_to "ログイン", new_user_session_path %>
-      </li>
-    <% end %>
+  <nav class="navbar navbar-expand-lg navbar-light ">
+  <div class="container-fluid">
+
+    <%= link_to image_tag('logo3.png',class: "logo-image navbar-brand"),root_path%>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+
+
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+          <a class="nav-link" href="/">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/products/about">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link navi"  href="/products">Share</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/products/ranking">Ranking</a>
+        </li>
+        
+        <li class="nav-item">
+          <a class="nav-link" href="/products/new">投稿</a>
+        </li>
+        <% if user_signed_in? %>
+        <li class="nav-item">
+          <a class="nav-link" href="/users/<%=current_user.id%>">マイページ</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/users/sign_out" data-method="delete">ログアウト</a>
+        </li>
+        <% else %>
+        <li class="nav-item">
+          <a class="nav-link" href="/users/sign_up" >新規登録</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/users/sign_in">ログイン</a>
+        </li>
+
+        <% end %>
+
+      </ul>
+       <%= form_with url: search_products_path, method: :get, local: true,class: "d-flex" do |f| %>
+        <%= f.collection_select(:genre_id, Genre.all, :id, :genre_name, prompt: "-- 選択してください --") %>
+        <%= f.submit "検索" ,class:"btn btn-outline-success btn-sm"%>
+        <% end %>
+
+    </div>
+  </div>
+</nav>
     <%= yield %>
   </body>
 </html>
+
+<script>
+$(function(){
+  $('.nav-item a').each(function(){
+    var target = $(this).attr('href');
+    // 選択したタグのhrefを取得
+    // alert(target)
+    // $('.current').removeClass('current');
+    if(location.pathname == target) {
+      // ページが遷移した後のURLがlocation.pathnameで取得されている
+      $(this).parent().addClass('current');
+    } else {
+      $(this).parent().removeClass('current');
+    }
+  });
+});
+</script>
