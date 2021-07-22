@@ -78,5 +78,7 @@ https://docs.google.com/spreadsheets/d/1V_K82IGxj8x-QlkzPk6syIGLDhoC2n0awEX2IK9g
 - IDE：Cloud9
 
 ## 使用素材
+- ロゴ作成アプリ  https://www.canva.com/?loginRedirect=%2F%3FupgradeDialog%3DGENERIC_C4W&signupRedirect=%2F%3FupgradeDialog%3DGENERIC_C4W
+- フリー素材 ttps://unsplash.com/
 - 外部サービスの画像素材・音声素材を使用した場合は、必ずサービス名とURLを明記してください。
 - 使用しない場合は、使用素材の項目をREADMEから削除してください。
