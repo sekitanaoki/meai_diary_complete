@@ -61,25 +61,24 @@ end
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
-
 gem "refile", require: "refile/rails", github: 'manfe/refile'
-#画像投稿用
+# 画像投稿用
 
 gem "refile-mini_magick"
-#画像加工用
+# 画像加工用
 
 gem 'devise'
-#認証機能(device)の作成
+# 認証機能(device)の作成
 
 gem 'bootstrap', '~> 4.5'
 gem 'jquery-rails'
-#Bootstrap機能の作成
+# Bootstrap機能の作成
 
-gem 'kaminari','~> 1.2.1'
-#ページャ機能の追加
+gem 'kaminari', '~> 1.2.1'
+# ページャ機能の追加
 
 gem 'pry-rails'
 
 gem "simple_calendar", "~> 2.4"
 
-
+gem 'rubocop-airbnb'

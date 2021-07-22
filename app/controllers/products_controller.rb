@@ -1,5 +1,4 @@
 class ProductsController < ApplicationController
-
   before_action :authenticate_user!, only: [:create]
 
   def top
@@ -20,9 +19,9 @@ class ProductsController < ApplicationController
     @product = Product.new(product_image_params)
     @product.user_id = current_user.id
     if @product.save
-    redirect_to  products_path
+      redirect_to products_path
     else
-    render:new
+      render :new
     end
   end
 
@@ -48,26 +47,23 @@ class ProductsController < ApplicationController
   end
 
   def search
-    @product_images=Product.where(genre_id: params[:genre_id])
+    @product_images = Product.where(genre_id: params[:genre_id])
     @product_images = @product_images.page(params[:page]).reverse_order
     render "index"
   end
 
   def update
-     @product = Product.find(params[:id])
-     if @product.update(product_image_params)
-       redirect_to product_path(@product)
-     else
-       render :edit
-     end
+    @product = Product.find(params[:id])
+    if @product.update(product_image_params)
+      redirect_to product_path(@product)
+    else
+      render :edit
+    end
   end
-
-
 
   private
 
   def product_image_params
-    params.require(:product).permit(:product_image, :time, :shop_name, :address, :menu_name, :description,:user_id,:genre_id)
+    params.require(:product).permit(:product_image, :time, :shop_name, :address, :menu_name, :description, :user_id, :genre_id)
   end
-
 end
