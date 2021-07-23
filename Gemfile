@@ -82,3 +82,8 @@ gem 'pry-rails'
 gem "simple_calendar", "~> 2.4"
 
 gem 'rubocop-airbnb'
+
+gem 'dotenv-rails'
+group :production do
+  gem 'mysql2'
+end
