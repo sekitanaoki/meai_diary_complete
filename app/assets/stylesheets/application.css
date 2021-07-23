@@ -18,16 +18,16 @@
   height: 400px;
 }
 .image1 {
-  background-image: url(image1.jpeg);
+  background-image:image-url(image1.jpg);
 }
 .image2 {
-  background-image: url(image2.jpeg);
+  background-image:image-url(image2.jpg);
 }
 .image3 {
-  background-image: url(image3.jpeg);
+  background-image:image-url(image3.jpg);
 }
 .image4 {
-  background-image: url(image4.jpeg);
+  background-image:image-url(image4.jpg);
 }
 
 .calendar{
@@ -40,7 +40,7 @@
 .logo-image{
   width:150px;
   height:150px;
-  
+
   /*ロゴの大きさ指定*/
 }
 
