@@ -4,7 +4,7 @@
 //= require action_cable
 //= require_self
 //= require_tree ./channels
-/*gl
+//*gl
 (function() {
   this.App || (this.App = {});
 

@@ -1,5 +1,5 @@
 <div class ="box">
-  <h2><%= image_tag'logo8.png',size:'50x30'%><b>投稿フォーム</b></h2>
+  <h2><%= image_tag'logo8.png',size:'50x30'%><b>編集ページ</b></h2>
   <% if @product.errors.any? %>
     <h4><%= @product.errors.count %>件のエラーが発生しました</h4>
     <% @product.errors.full_messages.each do |message| %>
@@ -10,7 +10,7 @@
     <h6>画像</h6>
       <%= f.attachment_field :product_image %>
     <h6>日時</h6>
-      <%= f.datetime_select :time, :default => Time.now + 9.hour%>
+      <%= f.datetime_field :time%>
     <h6>ショップ名</h6>
       <%= f.text_field :shop_name %>
     <h6>店舗住所</h6>

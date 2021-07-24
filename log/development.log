@@ -898,3 +898,1086 @@ Processing by ProductsController#top as HTML
 Completed 200 OK in 32ms (Views: 31.4ms | ActiveRecord: 0.1ms)
 
 
+Started GET "/" for 60.69.133.9 at 2021-07-23 14:47:07 +0000
+Cannot render console from 60.69.133.9! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ vendor/cache/ruby/2.6.0/gems/activerecord-5.2.6/lib/active_record/log_subscriber.rb:98
+Processing by ProductsController#top as HTML
+  Rendering products/top.html.erb within layouts/application
+  Rendered simple_calendar/_month_calendar.html.erb (13.1ms)
+  Rendered products/top.html.erb within layouts/application (16.7ms)
+Completed 500 Internal Server Error in 318ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (Error: Invalid CSS after "...mage-url(image1": expected expression (e.g. 1px, bold), was ".jpg);"
+        on line 22:36 of app/assets/stylesheets/application.scss
+>>   background-image:image-url(image1.jpg);
+
+   -----------------------------------^
+):
+     5:     <%= csrf_meta_tags %>
+     6:     <%= csp_meta_tag %>
+     7: 
+     8:     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+     9:     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    10:     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    11: 
+  
+app/assets/stylesheets/application.scss:22
+app/views/layouts/application.html.erb:8:in `_app_views_layouts_application_html_erb___2511745527378465453_18404140'
+Started GET "/" for 60.69.133.9 at 2021-07-23 14:48:49 +0000
+Cannot render console from 60.69.133.9! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ProductsController#top as HTML
+  Rendering products/top.html.erb within layouts/application
+  Rendered simple_calendar/_month_calendar.html.erb (6.7ms)
+  Rendered products/top.html.erb within layouts/application (8.9ms)
+Completed 500 Internal Server Error in 20ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (Error: Invalid CSS after "...mage-url(image1": expected expression (e.g. 1px, bold), was ".jpg);"
+        on line 22:36 of app/assets/stylesheets/application.scss
+>>   background-image:image-url(image1.jpg);
+
+   -----------------------------------^
+):
+     5:     <%= csrf_meta_tags %>
+     6:     <%= csp_meta_tag %>
+     7: 
+     8:     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+     9:     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    10:     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    11: 
+  
+app/assets/stylesheets/application.scss:22
+app/views/layouts/application.html.erb:8:in `_app_views_layouts_application_html_erb___2511745527378465453_69989277218740'
+Started GET "/" for 60.69.133.9 at 2021-07-23 14:49:21 +0000
+Cannot render console from 60.69.133.9! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ProductsController#top as HTML
+  Rendering products/top.html.erb within layouts/application
+  Rendered simple_calendar/_month_calendar.html.erb (7.1ms)
+  Rendered products/top.html.erb within layouts/application (9.3ms)
+Completed 500 Internal Server Error in 19ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (Error: Invalid CSS after "...mage-url(image1": expected expression (e.g. 1px, bold), was ".jpg);"
+        on line 22:36 of app/assets/stylesheets/application.scss
+>>   background-image:image-url(image1.jpg);
+
+   -----------------------------------^
+):
+     5:     <%= csrf_meta_tags %>
+     6:     <%= csp_meta_tag %>
+     7: 
+     8:     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+     9:     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    10:     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    11: 
+  
+app/assets/stylesheets/application.scss:22
+app/views/layouts/application.html.erb:8:in `_app_views_layouts_application_html_erb___2511745527378465453_69989310773560'
+Started GET "/" for 60.69.133.9 at 2021-07-23 14:49:23 +0000
+Cannot render console from 60.69.133.9! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ProductsController#top as HTML
+  Rendering products/top.html.erb within layouts/application
+  Rendered simple_calendar/_month_calendar.html.erb (4.6ms)
+  Rendered products/top.html.erb within layouts/application (7.8ms)
+Completed 500 Internal Server Error in 17ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (Error: Invalid CSS after "...mage-url(image1": expected expression (e.g. 1px, bold), was ".jpg);"
+        on line 22:36 of app/assets/stylesheets/application.scss
+>>   background-image:image-url(image1.jpg);
+
+   -----------------------------------^
+):
+     5:     <%= csrf_meta_tags %>
+     6:     <%= csp_meta_tag %>
+     7: 
+     8:     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+     9:     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    10:     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    11: 
+  
+app/assets/stylesheets/application.scss:22
+app/views/layouts/application.html.erb:8:in `_app_views_layouts_application_html_erb___2511745527378465453_69989282924520'
+Started GET "/" for 60.69.133.9 at 2021-07-23 14:49:58 +0000
+Cannot render console from 60.69.133.9! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ProductsController#top as HTML
+  Rendering products/top.html.erb within layouts/application
+  Rendered simple_calendar/_month_calendar.html.erb (6.6ms)
+  Rendered products/top.html.erb within layouts/application (9.3ms)
+Completed 500 Internal Server Error in 28ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (Error: Invalid CSS after "...mage-url(image2": expected expression (e.g. 1px, bold), was ".jpg);"
+        on line 25:36 of app/assets/stylesheets/application.scss
+>>   background-image:image-url(image2.jpg);
+
+   -----------------------------------^
+):
+     5:     <%= csrf_meta_tags %>
+     6:     <%= csp_meta_tag %>
+     7: 
+     8:     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+     9:     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    10:     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    11: 
+  
+app/assets/stylesheets/application.scss:25
+app/views/layouts/application.html.erb:8:in `_app_views_layouts_application_html_erb___2511745527378465453_69989282836100'
+Started GET "/" for 60.69.133.9 at 2021-07-23 14:50:28 +0000
+Cannot render console from 60.69.133.9! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ProductsController#top as HTML
+  Rendering products/top.html.erb within layouts/application
+  Rendered simple_calendar/_month_calendar.html.erb (5.3ms)
+  Rendered products/top.html.erb within layouts/application (7.5ms)
+  [1m[36mGenre Load (0.2ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/layouts/application.html.erb:62
+Completed 200 OK in 1888ms (Views: 1885.0ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/image1.jpg" for 60.69.133.9 at 2021-07-23 14:50:31 +0000
+Cannot render console from 60.69.133.9! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  
+Started GET "/image2.jpg" for 60.69.133.9 at 2021-07-23 14:50:31 +0000
+Started GET "/image3.jpg" for 60.69.133.9 at 2021-07-23 14:50:31 +0000
+ActionController::RoutingError (No route matches [GET] "/image1.jpg"):
+Cannot render console from 60.69.133.9! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Cannot render console from 60.69.133.9! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  
+vendor/cache/ruby/2.6.0/gems/actionpack-5.2.6/lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+vendor/cache/ruby/2.6.0/gems/web-console-3.7.0/lib/web_console/middleware.rb:135:in `call_app'
+vendor/cache/ruby/2.6.0/gems/web-console-3.7.0/lib/web_console/middleware.rb:22:in `block in call'
+vendor/cache/ruby/2.6.0/gems/web-console-3.7.0/lib/web_console/middleware.rb:20:in `catch'
+vendor/cache/ruby/2.6.0/gems/web-console-3.7.0/lib/web_console/middleware.rb:20:in `call'
+vendor/cache/ruby/2.6.0/gems/actionpack-5.2.6/lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+vendor/cache/ruby/2.6.0/gems/railties-5.2.6/lib/rails/rack/logger.rb:38:in `call_app'
+vendor/cache/ruby/2.6.0/gems/railties-5.2.6/lib/rails/rack/logger.rb:26:in `block in call'
+vendor/cache/ruby/2.6.0/gems/activesupport-5.2.6/lib/active_support/tagged_logging.rb:71:in `block in tagged'
+vendor/cache/ruby/2.6.0/gems/activesupport-5.2.6/lib/active_support/tagged_logging.rb:28:in `tagged'
+vendor/cache/ruby/2.6.0/gems/activesupport-5.2.6/lib/active_support/tagged_logging.rb:71:in `tagged'
+vendor/cache/ruby/2.6.0/gems/railties-5.2.6/lib/rails/rack/logger.rb:26:in `call'
+vendor/cache/ruby/2.6.0/gems/sprockets-rails-3.2.2/lib/sprockets/rails/quiet_assets.rb:13:in `call'
+vendor/cache/ruby/2.6.0/gems/actionpack-5.2.6/lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+vendor/cache/ruby/2.6.0/gems/actionpack-5.2.6/lib/action_dispatch/middleware/request_id.rb:27:in `call'
+vendor/cache/ruby/2.6.0/gems/rack-2.2.3/lib/rack/method_override.rb:24:in `call'
+vendor/cache/ruby/2.6.0/gems/rack-2.2.3/lib/rack/runtime.rb:22:in `call'
+vendor/cache/ruby/2.6.0/gems/activesupport-5.2.6/lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+vendor/cache/ruby/2.6.0/gems/actionpack-5.2.6/lib/action_dispatch/middleware/executor.rb:14:in `call'
+vendor/cache/ruby/2.6.0/gems/actionpack-5.2.6/lib/action_dispatch/middleware/static.rb:127:in `call'
+vendor/cache/ruby/2.6.0/gems/rack-2.2.3/lib/rack/sendfile.rb:110:in `call'
+vendor/cache/ruby/2.6.0/gems/railties-5.2.6/lib/rails/engine.rb:524:in `call'
+vendor/cache/ruby/2.6.0/gems/puma-3.12.6/lib/puma/configuration.rb:227:in `call'
+vendor/cache/ruby/2.6.0/gems/puma-3.12.6/lib/puma/server.rb:706:in `handle_request'
+vendor/cache/ruby/2.6.0/gems/puma-3.12.6/lib/puma/server.rb:476:in `process_client'
+vendor/cache/ruby/2.6.0/gems/puma-3.12.6/lib/puma/server.rb:334:in `block in run'
+vendor/cache/ruby/2.6.0/gems/puma-3.12.6/lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+  
+ActionController::RoutingError (No route matches [GET] "/image3.jpg"):
+  
+vendor/cache/ruby/2.6.0/gems/actionpack-5.2.6/lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+vendor/cache/ruby/2.6.0/gems/web-console-3.7.0/lib/web_console/middleware.rb:135:in `call_app'
+vendor/cache/ruby/2.6.0/gems/web-console-3.7.0/lib/web_console/middleware.rb:22:in `block in call'
+vendor/cache/ruby/2.6.0/gems/web-console-3.7.0/lib/web_console/middleware.rb:20:in `catch'
+vendor/cache/ruby/2.6.0/gems/web-console-3.7.0/lib/web_console/middleware.rb:20:in `call'
+vendor/cache/ruby/2.6.0/gems/actionpack-5.2.6/lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+vendor/cache/ruby/2.6.0/gems/railties-5.2.6/lib/rails/rack/logger.rb:38:in `call_app'
+vendor/cache/ruby/2.6.0/gems/railties-5.2.6/lib/rails/rack/logger.rb:26:in `block in call'
+vendor/cache/ruby/2.6.0/gems/activesupport-5.2.6/lib/active_support/tagged_logging.rb:71:in `block in tagged'
+vendor/cache/ruby/2.6.0/gems/activesupport-5.2.6/lib/active_support/tagged_logging.rb:28:in `tagged'
+vendor/cache/ruby/2.6.0/gems/activesupport-5.2.6/lib/active_support/tagged_logging.rb:71:in `tagged'
+vendor/cache/ruby/2.6.0/gems/railties-5.2.6/lib/rails/rack/logger.rb:26:in `call'
+vendor/cache/ruby/2.6.0/gems/sprockets-rails-3.2.2/lib/sprockets/rails/quiet_assets.rb:13:in `call'
+vendor/cache/ruby/2.6.0/gems/actionpack-5.2.6/lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+vendor/cache/ruby/2.6.0/gems/actionpack-5.2.6/lib/action_dispatch/middleware/request_id.rb:27:in `call'
+vendor/cache/ruby/2.6.0/gems/rack-2.2.3/lib/rack/method_override.rb:24:in `call'
+vendor/cache/ruby/2.6.0/gems/rack-2.2.3/lib/rack/runtime.rb:22:in `call'
+vendor/cache/ruby/2.6.0/gems/activesupport-5.2.6/lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+vendor/cache/ruby/2.6.0/gems/actionpack-5.2.6/lib/action_dispatch/middleware/executor.rb:14:in `call'
+vendor/cache/ruby/2.6.0/gems/actionpack-5.2.6/lib/action_dispatch/middleware/static.rb:127:in `call'
+vendor/cache/ruby/2.6.0/gems/rack-2.2.3/lib/rack/sendfile.rb:110:in `call'
+vendor/cache/ruby/2.6.0/gems/railties-5.2.6/lib/rails/engine.rb:524:in `call'
+vendor/cache/ruby/2.6.0/gems/puma-3.12.6/lib/puma/configuration.rb:227:in `call'
+vendor/cache/ruby/2.6.0/gems/puma-3.12.6/lib/puma/server.rb:706:in `handle_request'
+vendor/cache/ruby/2.6.0/gems/puma-3.12.6/lib/puma/server.rb:476:in `process_client'
+vendor/cache/ruby/2.6.0/gems/puma-3.12.6/lib/puma/server.rb:334:in `block in run'
+vendor/cache/ruby/2.6.0/gems/puma-3.12.6/lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+  
+ActionController::RoutingError (No route matches [GET] "/image2.jpg"):
+  
+vendor/cache/ruby/2.6.0/gems/actionpack-5.2.6/lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+vendor/cache/ruby/2.6.0/gems/web-console-3.7.0/lib/web_console/middleware.rb:135:in `call_app'
+vendor/cache/ruby/2.6.0/gems/web-console-3.7.0/lib/web_console/middleware.rb:22:in `block in call'
+vendor/cache/ruby/2.6.0/gems/web-console-3.7.0/lib/web_console/middleware.rb:20:in `catch'
+vendor/cache/ruby/2.6.0/gems/web-console-3.7.0/lib/web_console/middleware.rb:20:in `call'
+vendor/cache/ruby/2.6.0/gems/actionpack-5.2.6/lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+vendor/cache/ruby/2.6.0/gems/railties-5.2.6/lib/rails/rack/logger.rb:38:in `call_app'
+vendor/cache/ruby/2.6.0/gems/railties-5.2.6/lib/rails/rack/logger.rb:26:in `block in call'
+vendor/cache/ruby/2.6.0/gems/activesupport-5.2.6/lib/active_support/tagged_logging.rb:71:in `block in tagged'
+vendor/cache/ruby/2.6.0/gems/activesupport-5.2.6/lib/active_support/tagged_logging.rb:28:in `tagged'
+vendor/cache/ruby/2.6.0/gems/activesupport-5.2.6/lib/active_support/tagged_logging.rb:71:in `tagged'
+vendor/cache/ruby/2.6.0/gems/railties-5.2.6/lib/rails/rack/logger.rb:26:in `call'
+vendor/cache/ruby/2.6.0/gems/sprockets-rails-3.2.2/lib/sprockets/rails/quiet_assets.rb:13:in `call'
+vendor/cache/ruby/2.6.0/gems/actionpack-5.2.6/lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+vendor/cache/ruby/2.6.0/gems/actionpack-5.2.6/lib/action_dispatch/middleware/request_id.rb:27:in `call'
+vendor/cache/ruby/2.6.0/gems/rack-2.2.3/lib/rack/method_override.rb:24:in `call'
+vendor/cache/ruby/2.6.0/gems/rack-2.2.3/lib/rack/runtime.rb:22:in `call'
+vendor/cache/ruby/2.6.0/gems/activesupport-5.2.6/lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+vendor/cache/ruby/2.6.0/gems/actionpack-5.2.6/lib/action_dispatch/middleware/executor.rb:14:in `call'
+vendor/cache/ruby/2.6.0/gems/actionpack-5.2.6/lib/action_dispatch/middleware/static.rb:127:in `call'
+vendor/cache/ruby/2.6.0/gems/rack-2.2.3/lib/rack/sendfile.rb:110:in `call'
+vendor/cache/ruby/2.6.0/gems/railties-5.2.6/lib/rails/engine.rb:524:in `call'
+vendor/cache/ruby/2.6.0/gems/puma-3.12.6/lib/puma/configuration.rb:227:in `call'
+vendor/cache/ruby/2.6.0/gems/puma-3.12.6/lib/puma/server.rb:706:in `handle_request'
+vendor/cache/ruby/2.6.0/gems/puma-3.12.6/lib/puma/server.rb:476:in `process_client'
+vendor/cache/ruby/2.6.0/gems/puma-3.12.6/lib/puma/server.rb:334:in `block in run'
+vendor/cache/ruby/2.6.0/gems/puma-3.12.6/lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/image4.jpg" for 60.69.133.9 at 2021-07-23 14:50:31 +0000
+Cannot render console from 60.69.133.9! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  
+ActionController::RoutingError (No route matches [GET] "/image4.jpg"):
+  
+vendor/cache/ruby/2.6.0/gems/actionpack-5.2.6/lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+vendor/cache/ruby/2.6.0/gems/web-console-3.7.0/lib/web_console/middleware.rb:135:in `call_app'
+vendor/cache/ruby/2.6.0/gems/web-console-3.7.0/lib/web_console/middleware.rb:22:in `block in call'
+vendor/cache/ruby/2.6.0/gems/web-console-3.7.0/lib/web_console/middleware.rb:20:in `catch'
+vendor/cache/ruby/2.6.0/gems/web-console-3.7.0/lib/web_console/middleware.rb:20:in `call'
+vendor/cache/ruby/2.6.0/gems/actionpack-5.2.6/lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+vendor/cache/ruby/2.6.0/gems/railties-5.2.6/lib/rails/rack/logger.rb:38:in `call_app'
+vendor/cache/ruby/2.6.0/gems/railties-5.2.6/lib/rails/rack/logger.rb:26:in `block in call'
+vendor/cache/ruby/2.6.0/gems/activesupport-5.2.6/lib/active_support/tagged_logging.rb:71:in `block in tagged'
+vendor/cache/ruby/2.6.0/gems/activesupport-5.2.6/lib/active_support/tagged_logging.rb:28:in `tagged'
+vendor/cache/ruby/2.6.0/gems/activesupport-5.2.6/lib/active_support/tagged_logging.rb:71:in `tagged'
+vendor/cache/ruby/2.6.0/gems/railties-5.2.6/lib/rails/rack/logger.rb:26:in `call'
+vendor/cache/ruby/2.6.0/gems/sprockets-rails-3.2.2/lib/sprockets/rails/quiet_assets.rb:13:in `call'
+vendor/cache/ruby/2.6.0/gems/actionpack-5.2.6/lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+vendor/cache/ruby/2.6.0/gems/actionpack-5.2.6/lib/action_dispatch/middleware/request_id.rb:27:in `call'
+vendor/cache/ruby/2.6.0/gems/rack-2.2.3/lib/rack/method_override.rb:24:in `call'
+vendor/cache/ruby/2.6.0/gems/rack-2.2.3/lib/rack/runtime.rb:22:in `call'
+vendor/cache/ruby/2.6.0/gems/activesupport-5.2.6/lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+vendor/cache/ruby/2.6.0/gems/actionpack-5.2.6/lib/action_dispatch/middleware/executor.rb:14:in `call'
+vendor/cache/ruby/2.6.0/gems/actionpack-5.2.6/lib/action_dispatch/middleware/static.rb:127:in `call'
+vendor/cache/ruby/2.6.0/gems/rack-2.2.3/lib/rack/sendfile.rb:110:in `call'
+vendor/cache/ruby/2.6.0/gems/railties-5.2.6/lib/rails/engine.rb:524:in `call'
+vendor/cache/ruby/2.6.0/gems/puma-3.12.6/lib/puma/configuration.rb:227:in `call'
+vendor/cache/ruby/2.6.0/gems/puma-3.12.6/lib/puma/server.rb:706:in `handle_request'
+vendor/cache/ruby/2.6.0/gems/puma-3.12.6/lib/puma/server.rb:476:in `process_client'
+vendor/cache/ruby/2.6.0/gems/puma-3.12.6/lib/puma/server.rb:334:in `block in run'
+vendor/cache/ruby/2.6.0/gems/puma-3.12.6/lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/" for 60.69.133.9 at 2021-07-23 14:52:43 +0000
+Cannot render console from 60.69.133.9! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ProductsController#top as HTML
+  Rendering products/top.html.erb within layouts/application
+  Rendered simple_calendar/_month_calendar.html.erb (4.8ms)
+  Rendered products/top.html.erb within layouts/application (13.1ms)
+  [1m[36mGenre Load (0.2ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/layouts/application.html.erb:62
+Completed 200 OK in 64ms (Views: 63.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 60.69.133.9 at 2021-07-23 15:13:13 +0000
+Cannot render console from 60.69.133.9! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ vendor/cache/ruby/2.6.0/gems/activerecord-5.2.6/lib/active_record/log_subscriber.rb:98
+Processing by ProductsController#top as HTML
+  Rendering products/top.html.erb within layouts/application
+  Rendered simple_calendar/_month_calendar.html.erb (13.9ms)
+  Rendered products/top.html.erb within layouts/application (289.7ms)
+  [1m[36mGenre Load (0.2ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/layouts/application.html.erb:62
+Completed 200 OK in 413ms (Views: 403.6ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/" for 60.69.133.9 at 2021-07-23 15:13:14 +0000
+Cannot render console from 60.69.133.9! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ProductsController#top as HTML
+  Rendering products/top.html.erb within layouts/application
+  Rendered simple_calendar/_month_calendar.html.erb (4.7ms)
+  Rendered products/top.html.erb within layouts/application (12.7ms)
+  [1m[36mGenre Load (0.2ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/layouts/application.html.erb:62
+Completed 200 OK in 60ms (Views: 59.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/products/new" for 60.69.133.9 at 2021-07-23 15:13:18 +0000
+Cannot render console from 60.69.133.9! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ProductsController#new as HTML
+  Rendering products/new.html.erb within layouts/application
+  [1m[36mGenre Load (0.1ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/products/new.html.erb:21
+  Rendered products/new.html.erb within layouts/application (11.7ms)
+  [1m[36mCACHE Genre Load (0.0ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/layouts/application.html.erb:62
+Completed 200 OK in 77ms (Views: 59.2ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for 60.69.133.9 at 2021-07-23 15:13:25 +0000
+Cannot render console from 60.69.133.9! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ProductsController#top as HTML
+  Rendering products/top.html.erb within layouts/application
+  Rendered simple_calendar/_month_calendar.html.erb (6.5ms)
+  Rendered products/top.html.erb within layouts/application (12.9ms)
+  [1m[36mGenre Load (0.1ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/layouts/application.html.erb:62
+Completed 200 OK in 64ms (Views: 63.0ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/" for 60.69.133.9 at 2021-07-23 15:13:27 +0000
+Cannot render console from 60.69.133.9! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ProductsController#top as HTML
+  Rendering products/top.html.erb within layouts/application
+  Rendered simple_calendar/_month_calendar.html.erb (6.8ms)
+  Rendered products/top.html.erb within layouts/application (11.9ms)
+  [1m[36mGenre Load (0.1ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/layouts/application.html.erb:62
+Completed 200 OK in 63ms (Views: 61.7ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/products/new" for 60.69.133.9 at 2021-07-23 15:17:01 +0000
+Cannot render console from 60.69.133.9! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ProductsController#new as HTML
+  Rendering products/new.html.erb within layouts/application
+  [1m[36mGenre Load (0.1ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/products/new.html.erb:21
+  Rendered products/new.html.erb within layouts/application (9.2ms)
+  [1m[36mCACHE Genre Load (0.0ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/layouts/application.html.erb:62
+Completed 200 OK in 1895ms (Views: 1894.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/products/new" for 60.69.133.9 at 2021-07-23 15:17:33 +0000
+Cannot render console from 60.69.133.9! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ProductsController#new as HTML
+  Rendering products/new.html.erb within layouts/application
+  [1m[36mGenre Load (0.2ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/products/new.html.erb:21
+  Rendered products/new.html.erb within layouts/application (8.7ms)
+  [1m[36mCACHE Genre Load (0.0ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/layouts/application.html.erb:62
+Completed 200 OK in 1336ms (Views: 1335.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/products/new" for 60.69.133.9 at 2021-07-23 15:18:23 +0000
+Cannot render console from 60.69.133.9! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ProductsController#new as HTML
+  Rendering products/new.html.erb within layouts/application
+  [1m[36mGenre Load (0.1ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/products/new.html.erb:21
+  Rendered products/new.html.erb within layouts/application (6.4ms)
+  [1m[36mCACHE Genre Load (0.0ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/layouts/application.html.erb:62
+Completed 200 OK in 1510ms (Views: 1508.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/products/new" for 60.69.133.9 at 2021-07-23 15:18:55 +0000
+Cannot render console from 60.69.133.9! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ProductsController#new as HTML
+  Rendering products/new.html.erb within layouts/application
+  [1m[36mGenre Load (0.1ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/products/new.html.erb:21
+  Rendered products/new.html.erb within layouts/application (6.9ms)
+  [1m[36mCACHE Genre Load (0.0ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/layouts/application.html.erb:62
+Completed 200 OK in 1083ms (Views: 1081.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/products/new" for 60.69.133.9 at 2021-07-23 15:19:10 +0000
+Cannot render console from 60.69.133.9! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ProductsController#new as HTML
+  Rendering products/new.html.erb within layouts/application
+  [1m[36mGenre Load (0.1ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/products/new.html.erb:21
+  Rendered products/new.html.erb within layouts/application (3.5ms)
+  [1m[36mCACHE Genre Load (0.0ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/layouts/application.html.erb:62
+Completed 200 OK in 1552ms (Views: 1551.0ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/products/new" for 60.69.133.9 at 2021-07-23 15:19:32 +0000
+Cannot render console from 60.69.133.9! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ProductsController#new as HTML
+  Rendering products/new.html.erb within layouts/application
+  [1m[36mGenre Load (0.1ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/products/new.html.erb:21
+  Rendered products/new.html.erb within layouts/application (6.6ms)
+  [1m[36mCACHE Genre Load (0.0ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/layouts/application.html.erb:62
+Completed 200 OK in 1082ms (Views: 1080.9ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/users/sign_up" for 60.69.133.9 at 2021-07-23 15:19:42 +0000
+Cannot render console from 60.69.133.9! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (0.5ms)
+  Rendered devise/shared/_links.html.erb (1.8ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (14.3ms)
+  [1m[36mGenre Load (0.2ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/layouts/application.html.erb:62
+Completed 200 OK in 77ms (Views: 62.2ms | ActiveRecord: 3.8ms)
+
+
+Started GET "/products/new" for 60.69.133.9 at 2021-07-23 15:19:44 +0000
+Cannot render console from 60.69.133.9! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ProductsController#new as HTML
+  Rendering products/new.html.erb within layouts/application
+  [1m[36mGenre Load (0.1ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/products/new.html.erb:21
+  Rendered products/new.html.erb within layouts/application (7.8ms)
+  [1m[36mCACHE Genre Load (0.0ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/layouts/application.html.erb:62
+Completed 200 OK in 77ms (Views: 74.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users/sign_up" for 60.69.133.9 at 2021-07-23 15:19:49 +0000
+Cannot render console from 60.69.133.9! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (0.5ms)
+  Rendered devise/shared/_links.html.erb (0.8ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (7.9ms)
+  [1m[36mGenre Load (0.1ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/layouts/application.html.erb:62
+Completed 200 OK in 60ms (Views: 58.3ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/users/sign_in" for 60.69.133.9 at 2021-07-23 15:21:40 +0000
+Cannot render console from 60.69.133.9! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.0ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (9.7ms)
+  [1m[36mGenre Load (16.2ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/layouts/application.html.erb:62
+Completed 200 OK in 1197ms (Views: 1179.5ms | ActiveRecord: 16.2ms)
+
+
+Started GET "/users/sign_in" for 60.69.133.9 at 2021-07-23 15:21:41 +0000
+Cannot render console from 60.69.133.9! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (0.8ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (13.3ms)
+  [1m[36mGenre Load (0.1ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/layouts/application.html.erb:62
+Completed 200 OK in 71ms (Views: 69.8ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/users/sign_up" for 60.69.133.9 at 2021-07-23 15:21:44 +0000
+Cannot render console from 60.69.133.9! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (0.5ms)
+  Rendered devise/shared/_links.html.erb (0.7ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (19.2ms)
+  [1m[36mGenre Load (0.1ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/layouts/application.html.erb:62
+Completed 200 OK in 124ms (Views: 123.4ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/products/new" for 60.69.133.9 at 2021-07-23 15:21:46 +0000
+Cannot render console from 60.69.133.9! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ProductsController#new as HTML
+  Rendering products/new.html.erb within layouts/application
+  [1m[36mGenre Load (0.1ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/products/new.html.erb:21
+  Rendered products/new.html.erb within layouts/application (5.9ms)
+  [1m[36mCACHE Genre Load (0.0ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/layouts/application.html.erb:62
+Completed 200 OK in 72ms (Views: 70.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users/sign_up" for 60.69.133.9 at 2021-07-23 15:21:48 +0000
+Cannot render console from 60.69.133.9! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (0.5ms)
+  Rendered devise/shared/_links.html.erb (0.9ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (7.6ms)
+  [1m[36mGenre Load (0.1ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/layouts/application.html.erb:62
+Completed 200 OK in 55ms (Views: 53.2ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/users/sign_in" for 60.69.133.9 at 2021-07-23 15:22:01 +0000
+Cannot render console from 60.69.133.9! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (0.8ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (10.6ms)
+  [1m[36mGenre Load (0.2ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/layouts/application.html.erb:62
+Completed 200 OK in 66ms (Views: 65.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users/sign_in" for 60.69.133.9 at 2021-07-23 15:22:34 +0000
+Cannot render console from 60.69.133.9! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (0.8ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (9.0ms)
+  [1m[36mGenre Load (0.1ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/layouts/application.html.erb:62
+Completed 200 OK in 1131ms (Views: 1129.8ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/users/sign_up" for 60.69.133.9 at 2021-07-23 15:22:42 +0000
+Cannot render console from 60.69.133.9! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (0.5ms)
+  Rendered devise/shared/_links.html.erb (0.8ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (7.9ms)
+  [1m[36mGenre Load (0.1ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/layouts/application.html.erb:62
+Completed 200 OK in 63ms (Views: 62.3ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/users/sign_in" for 60.69.133.9 at 2021-07-23 15:22:44 +0000
+Cannot render console from 60.69.133.9! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (0.8ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (5.7ms)
+  [1m[36mGenre Load (0.1ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/layouts/application.html.erb:62
+Completed 200 OK in 59ms (Views: 57.6ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/users/sign_up" for 60.69.133.9 at 2021-07-23 15:22:45 +0000
+Cannot render console from 60.69.133.9! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (0.5ms)
+  Rendered devise/shared/_links.html.erb (0.9ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (8.0ms)
+  [1m[36mGenre Load (0.2ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/layouts/application.html.erb:62
+Completed 200 OK in 75ms (Views: 74.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users/sign_in" for 60.69.133.9 at 2021-07-23 15:23:03 +0000
+Cannot render console from 60.69.133.9! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (0.8ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (6.8ms)
+  [1m[36mGenre Load (0.1ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/layouts/application.html.erb:62
+Completed 200 OK in 1483ms (Views: 1481.5ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/users/sign_in" for 60.69.133.9 at 2021-07-23 15:23:04 +0000
+Cannot render console from 60.69.133.9! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (0.8ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (8.0ms)
+  [1m[36mGenre Load (0.1ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/layouts/application.html.erb:62
+Completed 200 OK in 60ms (Views: 58.6ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/users/sign_up" for 60.69.133.9 at 2021-07-23 15:23:07 +0000
+Cannot render console from 60.69.133.9! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (0.5ms)
+  Rendered devise/shared/_links.html.erb (0.8ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (7.5ms)
+  [1m[36mGenre Load (0.1ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/layouts/application.html.erb:62
+Completed 200 OK in 54ms (Views: 52.6ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/" for 60.69.139.71 at 2021-07-24 03:12:59 +0000
+Cannot render console from 60.69.139.71! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ vendor/cache/ruby/2.6.0/gems/activerecord-5.2.6/lib/active_record/log_subscriber.rb:98
+Processing by ProductsController#top as HTML
+  Rendering products/top.html.erb within layouts/application
+Started GET "/" for 60.69.139.71 at 2021-07-24 03:13:00 +0000
+Cannot render console from 60.69.139.71! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ProductsController#top as HTML
+  Rendering products/top.html.erb within layouts/application
+  Rendered simple_calendar/_month_calendar.html.erb (104.3ms)
+  Rendered products/top.html.erb within layouts/application (3392.6ms)
+  Rendered simple_calendar/_month_calendar.html.erb (14.7ms)
+  Rendered products/top.html.erb within layouts/application (2620.0ms)
+  [1m[36mGenre Load (0.2ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/layouts/application.html.erb:62
+Completed 200 OK in 3816ms (Views: 3805.2ms | ActiveRecord: 0.8ms)
+
+
+  [1m[36mGenre Load (0.1ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/layouts/application.html.erb:62
+Completed 200 OK in 2765ms (Views: 2764.4ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/products/about" for 60.69.139.71 at 2021-07-24 03:13:10 +0000
+Cannot render console from 60.69.139.71! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ProductsController#about as HTML
+  Rendering products/about.html.erb within layouts/application
+  Rendered products/about.html.erb within layouts/application (6.9ms)
+  [1m[36mGenre Load (0.1ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/layouts/application.html.erb:62
+Completed 200 OK in 61ms (Views: 58.3ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/products" for 60.69.139.71 at 2021-07-24 03:13:13 +0000
+Cannot render console from 60.69.139.71! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ProductsController#index as HTML
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT  "products".* FROM "products" ORDER BY "products"."id" DESC LIMIT ? OFFSET ?[0m  [["LIMIT", 6], ["OFFSET", 0]]
+  ↳ app/views/products/index.html.erb:2
+  [1m[36mGenre Load (0.2ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/products/index.html.erb:36
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/products/index.html.erb:43
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "favorites" WHERE "favorites"."product_id" = ?[0m  [["product_id", 1]]
+  ↳ app/views/products/index.html.erb:47
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "comments" WHERE "comments"."product_id" = ?[0m  [["product_id", 1]]
+  ↳ app/views/products/index.html.erb:53
+  Rendered products/index.html.erb within layouts/application (88.9ms)
+  [1m[36mGenre Load (0.1ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/layouts/application.html.erb:62
+Completed 200 OK in 193ms (Views: 172.2ms | ActiveRecord: 3.1ms)
+
+
+Started GET "/attachments/0bddc05ae812ecb5aee1395a74497dca898ca88d/store/7e4844cca46bc7c220a12a0177b6c68a240d3d3135776c7d7fc99145c1dd/product_image" for 60.69.139.71 at 2021-07-24 03:13:14 +0000
+Cannot render console from 60.69.139.71! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Refile::App: [2021-07-24 03:13:14 +0000] GET "/0bddc05ae812ecb5aee1395a74497dca898ca88d/store/7e4844cca46bc7c220a12a0177b6c68a240d3d3135776c7d7fc99145c1dd/product_image" 200 15.2ms
+
+Started GET "/products/ranking" for 60.69.139.71 at 2021-07-24 03:13:15 +0000
+Cannot render console from 60.69.139.71! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ProductsController#ranking as HTML
+DEPRECATION WARNING: Dangerous query method (method whose arguments are used as raw SQL) called with non-attribute argument(s): "count(product_id) desc". Non-attribute arguments will be disallowed in Rails 6.0. This method should not be called with user-provided values, such as request parameters or model attributes. Known-safe values can be passed by wrapping them in Arel.sql(). (called from ranking at /home/ec2-user/environment/meal_diary/app/controllers/products_controller.rb:11)
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT  "favorites"."product_id" FROM "favorites" GROUP BY "favorites"."product_id" ORDER BY count(product_id) desc LIMIT ?[0m  [["LIMIT", 3]]
+  ↳ app/controllers/products_controller.rb:11
+  [1m[36mProduct Load (0.1ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/products_controller.rb:11
+  Rendering products/ranking.html.erb within layouts/application
+  Rendered products/ranking.html.erb within layouts/application (3.3ms)
+  [1m[36mGenre Load (0.1ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/layouts/application.html.erb:62
+Completed 200 OK in 87ms (Views: 67.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 60.69.139.71 at 2021-07-24 03:13:17 +0000
+Cannot render console from 60.69.139.71! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ProductsController#top as HTML
+  Rendering products/top.html.erb within layouts/application
+  Rendered simple_calendar/_month_calendar.html.erb (5.5ms)
+  Rendered products/top.html.erb within layouts/application (16.4ms)
+  [1m[36mGenre Load (0.1ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/layouts/application.html.erb:62
+Completed 200 OK in 70ms (Views: 69.1ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/" for 60.69.139.71 at 2021-07-24 03:15:49 +0000
+Cannot render console from 60.69.139.71! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ProductsController#top as HTML
+  Rendering products/top.html.erb within layouts/application
+  Rendered simple_calendar/_month_calendar.html.erb (8.4ms)
+  Rendered products/top.html.erb within layouts/application (15.0ms)
+  [1m[36mGenre Load (0.2ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/layouts/application.html.erb:62
+Completed 200 OK in 63ms (Views: 62.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/products/about" for 60.69.139.71 at 2021-07-24 03:16:01 +0000
+Cannot render console from 60.69.139.71! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ProductsController#about as HTML
+  Rendering products/about.html.erb within layouts/application
+  Rendered products/about.html.erb within layouts/application (4.2ms)
+  [1m[36mGenre Load (0.2ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/layouts/application.html.erb:62
+Completed 200 OK in 52ms (Views: 50.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/products" for 60.69.139.71 at 2021-07-24 03:16:07 +0000
+Cannot render console from 60.69.139.71! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ProductsController#index as HTML
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.1ms)[0m  [1m[34mSELECT  "products".* FROM "products" ORDER BY "products"."id" DESC LIMIT ? OFFSET ?[0m  [["LIMIT", 6], ["OFFSET", 0]]
+  ↳ app/views/products/index.html.erb:2
+  [1m[36mGenre Load (0.1ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/products/index.html.erb:36
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/products/index.html.erb:43
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "favorites" WHERE "favorites"."product_id" = ?[0m  [["product_id", 1]]
+  ↳ app/views/products/index.html.erb:47
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "comments" WHERE "comments"."product_id" = ?[0m  [["product_id", 1]]
+  ↳ app/views/products/index.html.erb:53
+  Rendered products/index.html.erb within layouts/application (27.1ms)
+  [1m[36mGenre Load (0.2ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/layouts/application.html.erb:62
+Completed 200 OK in 87ms (Views: 85.0ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/products/ranking" for 60.69.139.71 at 2021-07-24 03:16:15 +0000
+Cannot render console from 60.69.139.71! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ProductsController#ranking as HTML
+DEPRECATION WARNING: Dangerous query method (method whose arguments are used as raw SQL) called with non-attribute argument(s): "count(product_id) desc". Non-attribute arguments will be disallowed in Rails 6.0. This method should not be called with user-provided values, such as request parameters or model attributes. Known-safe values can be passed by wrapping them in Arel.sql(). (called from ranking at /home/ec2-user/environment/meal_diary/app/controllers/products_controller.rb:11)
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT  "favorites"."product_id" FROM "favorites" GROUP BY "favorites"."product_id" ORDER BY count(product_id) desc LIMIT ?[0m  [["LIMIT", 3]]
+  ↳ app/controllers/products_controller.rb:11
+  [1m[36mProduct Load (0.1ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/products_controller.rb:11
+  Rendering products/ranking.html.erb within layouts/application
+  Rendered products/ranking.html.erb within layouts/application (2.1ms)
+  [1m[36mGenre Load (0.1ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/layouts/application.html.erb:62
+Completed 200 OK in 57ms (Views: 51.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/users/sign_in" for 60.69.139.71 at 2021-07-24 03:16:17 +0000
+Cannot render console from 60.69.139.71! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.9ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (15.0ms)
+  [1m[36mGenre Load (0.2ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/layouts/application.html.erb:62
+Completed 200 OK in 65ms (Views: 62.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/products/new" for 60.69.139.71 at 2021-07-24 03:16:21 +0000
+Cannot render console from 60.69.139.71! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ProductsController#new as HTML
+  Rendering products/new.html.erb within layouts/application
+  [1m[36mGenre Load (0.1ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/products/new.html.erb:21
+  Rendered products/new.html.erb within layouts/application (11.6ms)
+  [1m[36mCACHE Genre Load (0.0ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/layouts/application.html.erb:62
+Completed 200 OK in 60ms (Views: 58.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users/sign_up" for 60.69.139.71 at 2021-07-24 03:16:33 +0000
+Cannot render console from 60.69.139.71! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (0.4ms)
+  Rendered devise/shared/_links.html.erb (0.9ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (8.3ms)
+  [1m[36mGenre Load (0.1ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/layouts/application.html.erb:62
+Completed 200 OK in 57ms (Views: 56.2ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/products/new" for 60.69.139.71 at 2021-07-24 03:16:37 +0000
+Cannot render console from 60.69.139.71! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ProductsController#new as HTML
+  Rendering products/new.html.erb within layouts/application
+  [1m[36mGenre Load (0.1ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/products/new.html.erb:21
+  Rendered products/new.html.erb within layouts/application (6.8ms)
+  [1m[36mCACHE Genre Load (0.0ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/layouts/application.html.erb:62
+Completed 200 OK in 57ms (Views: 55.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/products/ranking" for 60.69.139.71 at 2021-07-24 03:16:38 +0000
+Cannot render console from 60.69.139.71! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ProductsController#ranking as HTML
+DEPRECATION WARNING: Dangerous query method (method whose arguments are used as raw SQL) called with non-attribute argument(s): "count(product_id) desc". Non-attribute arguments will be disallowed in Rails 6.0. This method should not be called with user-provided values, such as request parameters or model attributes. Known-safe values can be passed by wrapping them in Arel.sql(). (called from ranking at /home/ec2-user/environment/meal_diary/app/controllers/products_controller.rb:11)
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT  "favorites"."product_id" FROM "favorites" GROUP BY "favorites"."product_id" ORDER BY count(product_id) desc LIMIT ?[0m  [["LIMIT", 3]]
+  ↳ app/controllers/products_controller.rb:11
+  [1m[36mProduct Load (0.1ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/products_controller.rb:11
+  Rendering products/ranking.html.erb within layouts/application
+  Rendered products/ranking.html.erb within layouts/application (4.3ms)
+  [1m[36mGenre Load (0.1ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/layouts/application.html.erb:62
+Completed 200 OK in 72ms (Views: 64.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/products" for 60.69.139.71 at 2021-07-24 03:16:39 +0000
+Cannot render console from 60.69.139.71! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ProductsController#index as HTML
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.1ms)[0m  [1m[34mSELECT  "products".* FROM "products" ORDER BY "products"."id" DESC LIMIT ? OFFSET ?[0m  [["LIMIT", 6], ["OFFSET", 0]]
+  ↳ app/views/products/index.html.erb:2
+  [1m[36mGenre Load (0.1ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/products/index.html.erb:36
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/products/index.html.erb:43
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "favorites" WHERE "favorites"."product_id" = ?[0m  [["product_id", 1]]
+  ↳ app/views/products/index.html.erb:47
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "comments" WHERE "comments"."product_id" = ?[0m  [["product_id", 1]]
+  ↳ app/views/products/index.html.erb:53
+  Rendered products/index.html.erb within layouts/application (19.1ms)
+  [1m[36mGenre Load (0.1ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/layouts/application.html.erb:62
+Completed 200 OK in 66ms (Views: 63.9ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/products/about" for 60.69.139.71 at 2021-07-24 03:16:40 +0000
+Cannot render console from 60.69.139.71! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ProductsController#about as HTML
+  Rendering products/about.html.erb within layouts/application
+  Rendered products/about.html.erb within layouts/application (4.0ms)
+  [1m[36mGenre Load (0.1ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/layouts/application.html.erb:62
+Completed 200 OK in 119ms (Views: 117.6ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/" for 60.69.139.71 at 2021-07-24 03:16:46 +0000
+Cannot render console from 60.69.139.71! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ProductsController#top as HTML
+  Rendering products/top.html.erb within layouts/application
+  Rendered simple_calendar/_month_calendar.html.erb (17.7ms)
+  Rendered products/top.html.erb within layouts/application (24.4ms)
+  [1m[36mGenre Load (0.2ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/layouts/application.html.erb:62
+Completed 200 OK in 87ms (Views: 85.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/products/about" for 60.69.139.71 at 2021-07-24 03:18:56 +0000
+Cannot render console from 60.69.139.71! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ProductsController#about as HTML
+  Rendering products/about.html.erb within layouts/application
+  Rendered products/about.html.erb within layouts/application (2.1ms)
+  [1m[36mGenre Load (0.2ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/layouts/application.html.erb:62
+Completed 200 OK in 51ms (Views: 50.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/products" for 60.69.139.71 at 2021-07-24 03:18:58 +0000
+Cannot render console from 60.69.139.71! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ProductsController#index as HTML
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.1ms)[0m  [1m[34mSELECT  "products".* FROM "products" ORDER BY "products"."id" DESC LIMIT ? OFFSET ?[0m  [["LIMIT", 6], ["OFFSET", 0]]
+  ↳ app/views/products/index.html.erb:2
+  [1m[36mGenre Load (0.1ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/products/index.html.erb:36
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/products/index.html.erb:43
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "favorites" WHERE "favorites"."product_id" = ?[0m  [["product_id", 1]]
+  ↳ app/views/products/index.html.erb:47
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "comments" WHERE "comments"."product_id" = ?[0m  [["product_id", 1]]
+  ↳ app/views/products/index.html.erb:53
+  Rendered products/index.html.erb within layouts/application (17.2ms)
+  [1m[36mGenre Load (0.1ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/layouts/application.html.erb:62
+Completed 200 OK in 63ms (Views: 60.7ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/products/ranking" for 60.69.139.71 at 2021-07-24 03:19:00 +0000
+Cannot render console from 60.69.139.71! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ProductsController#ranking as HTML
+DEPRECATION WARNING: Dangerous query method (method whose arguments are used as raw SQL) called with non-attribute argument(s): "count(product_id) desc". Non-attribute arguments will be disallowed in Rails 6.0. This method should not be called with user-provided values, such as request parameters or model attributes. Known-safe values can be passed by wrapping them in Arel.sql(). (called from ranking at /home/ec2-user/environment/meal_diary/app/controllers/products_controller.rb:11)
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT  "favorites"."product_id" FROM "favorites" GROUP BY "favorites"."product_id" ORDER BY count(product_id) desc LIMIT ?[0m  [["LIMIT", 3]]
+  ↳ app/controllers/products_controller.rb:11
+  [1m[36mProduct Load (0.1ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/products_controller.rb:11
+  Rendering products/ranking.html.erb within layouts/application
+  Rendered products/ranking.html.erb within layouts/application (2.8ms)
+  [1m[36mGenre Load (0.1ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/layouts/application.html.erb:62
+Completed 200 OK in 57ms (Views: 50.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/users/sign_in" for 60.69.139.71 at 2021-07-24 03:19:05 +0000
+Cannot render console from 60.69.139.71! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (0.9ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (13.7ms)
+  [1m[36mGenre Load (0.1ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/layouts/application.html.erb:62
+Completed 200 OK in 62ms (Views: 60.6ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/products/ranking" for 60.69.139.71 at 2021-07-24 03:19:08 +0000
+Cannot render console from 60.69.139.71! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ProductsController#ranking as HTML
+DEPRECATION WARNING: Dangerous query method (method whose arguments are used as raw SQL) called with non-attribute argument(s): "count(product_id) desc". Non-attribute arguments will be disallowed in Rails 6.0. This method should not be called with user-provided values, such as request parameters or model attributes. Known-safe values can be passed by wrapping them in Arel.sql(). (called from ranking at /home/ec2-user/environment/meal_diary/app/controllers/products_controller.rb:11)
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT  "favorites"."product_id" FROM "favorites" GROUP BY "favorites"."product_id" ORDER BY count(product_id) desc LIMIT ?[0m  [["LIMIT", 3]]
+  ↳ app/controllers/products_controller.rb:11
+  [1m[36mProduct Load (0.1ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/products_controller.rb:11
+  Rendering products/ranking.html.erb within layouts/application
+  Rendered products/ranking.html.erb within layouts/application (3.1ms)
+  [1m[36mGenre Load (0.2ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/layouts/application.html.erb:62
+Completed 200 OK in 76ms (Views: 70.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/products" for 60.69.139.71 at 2021-07-24 03:19:14 +0000
+Cannot render console from 60.69.139.71! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ProductsController#index as HTML
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.1ms)[0m  [1m[34mSELECT  "products".* FROM "products" ORDER BY "products"."id" DESC LIMIT ? OFFSET ?[0m  [["LIMIT", 6], ["OFFSET", 0]]
+  ↳ app/views/products/index.html.erb:2
+  [1m[36mGenre Load (0.1ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/products/index.html.erb:36
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/products/index.html.erb:43
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "favorites" WHERE "favorites"."product_id" = ?[0m  [["product_id", 1]]
+  ↳ app/views/products/index.html.erb:47
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "comments" WHERE "comments"."product_id" = ?[0m  [["product_id", 1]]
+  ↳ app/views/products/index.html.erb:53
+  Rendered products/index.html.erb within layouts/application (17.4ms)
+  [1m[36mGenre Load (0.1ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/layouts/application.html.erb:62
+Completed 200 OK in 67ms (Views: 64.3ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/products/about" for 60.69.139.71 at 2021-07-24 03:19:14 +0000
+Cannot render console from 60.69.139.71! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ProductsController#about as HTML
+  Rendering products/about.html.erb within layouts/application
+  Rendered products/about.html.erb within layouts/application (4.5ms)
+  [1m[36mGenre Load (0.1ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/layouts/application.html.erb:62
+Completed 200 OK in 52ms (Views: 50.9ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/" for 60.69.139.71 at 2021-07-24 03:19:15 +0000
+Cannot render console from 60.69.139.71! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ProductsController#top as HTML
+  Rendering products/top.html.erb within layouts/application
+  Rendered simple_calendar/_month_calendar.html.erb (4.6ms)
+  Rendered products/top.html.erb within layouts/application (11.7ms)
+  [1m[36mGenre Load (0.2ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/layouts/application.html.erb:62
+Completed 200 OK in 57ms (Views: 56.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 60.69.139.71 at 2021-07-24 03:25:12 +0000
+Cannot render console from 60.69.139.71! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ vendor/cache/ruby/2.6.0/gems/activerecord-5.2.6/lib/active_record/log_subscriber.rb:98
+Processing by ProductsController#top as HTML
+  Rendering products/top.html.erb within layouts/application
+  Rendered simple_calendar/_month_calendar.html.erb (12.2ms)
+  Rendered products/top.html.erb within layouts/application (1793.4ms)
+  [1m[36mGenre Load (0.9ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/layouts/application.html.erb:62
+Completed 200 OK in 1998ms (Views: 1988.0ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/" for 60.69.139.71 at 2021-07-24 03:26:10 +0000
+Cannot render console from 60.69.139.71! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ProductsController#top as HTML
+  Rendering products/top.html.erb within layouts/application
+  Rendered simple_calendar/_month_calendar.html.erb (5.0ms)
+  Rendered products/top.html.erb within layouts/application (13.1ms)
+  [1m[36mGenre Load (0.1ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/layouts/application.html.erb:62
+Completed 200 OK in 596ms (Views: 594.3ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/" for 60.69.139.71 at 2021-07-24 03:26:27 +0000
+Cannot render console from 60.69.139.71! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ProductsController#top as HTML
+  Rendering products/top.html.erb within layouts/application
+  Rendered simple_calendar/_month_calendar.html.erb (20.6ms)
+  Rendered products/top.html.erb within layouts/application (30.8ms)
+  [1m[36mGenre Load (0.1ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/layouts/application.html.erb:62
+Completed 200 OK in 754ms (Views: 752.8ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/" for 60.69.139.71 at 2021-07-24 03:26:44 +0000
+Cannot render console from 60.69.139.71! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ProductsController#top as HTML
+  Rendering products/top.html.erb within layouts/application
+  Rendered simple_calendar/_month_calendar.html.erb (6.1ms)
+  Rendered products/top.html.erb within layouts/application (13.7ms)
+  [1m[36mGenre Load (0.1ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/layouts/application.html.erb:62
+Completed 200 OK in 74ms (Views: 72.7ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/" for 60.69.139.71 at 2021-07-24 03:28:00 +0000
+Cannot render console from 60.69.139.71! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ProductsController#top as HTML
+  Rendering products/top.html.erb within layouts/application
+  Rendered simple_calendar/_month_calendar.html.erb (6.8ms)
+  Rendered products/top.html.erb within layouts/application (18.0ms)
+  [1m[36mGenre Load (0.2ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/layouts/application.html.erb:62
+Completed 200 OK in 594ms (Views: 593.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 60.69.139.71 at 2021-07-24 03:29:59 +0000
+Cannot render console from 60.69.139.71! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ProductsController#top as HTML
+  Rendering products/top.html.erb within layouts/application
+  Rendered simple_calendar/_month_calendar.html.erb (6.6ms)
+  Rendered products/top.html.erb within layouts/application (12.7ms)
+  [1m[36mGenre Load (0.1ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/layouts/application.html.erb:62
+Completed 200 OK in 64ms (Views: 63.4ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/" for 60.69.139.71 at 2021-07-24 03:30:37 +0000
+Cannot render console from 60.69.139.71! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ProductsController#top as HTML
+  Rendering products/top.html.erb within layouts/application
+  Rendered simple_calendar/_month_calendar.html.erb (10.3ms)
+  Rendered products/top.html.erb within layouts/application (15.0ms)
+  [1m[36mGenre Load (0.1ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/layouts/application.html.erb:62
+Completed 200 OK in 614ms (Views: 613.5ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/" for 60.69.139.71 at 2021-07-24 03:31:00 +0000
+Cannot render console from 60.69.139.71! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ProductsController#top as HTML
+  Rendering products/top.html.erb within layouts/application
+  Rendered simple_calendar/_month_calendar.html.erb (5.7ms)
+  Rendered products/top.html.erb within layouts/application (19.6ms)
+  [1m[36mGenre Load (0.2ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/layouts/application.html.erb:62
+Completed 200 OK in 85ms (Views: 84.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 60.69.139.71 at 2021-07-24 03:33:42 +0000
+Cannot render console from 60.69.139.71! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ProductsController#top as HTML
+  Rendering products/top.html.erb within layouts/application
+  Rendered simple_calendar/_month_calendar.html.erb (9.1ms)
+  Rendered products/top.html.erb within layouts/application (22.9ms)
+  [1m[36mGenre Load (0.1ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/layouts/application.html.erb:62
+Completed 200 OK in 76ms (Views: 75.4ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/products/about" for 60.69.139.71 at 2021-07-24 03:33:59 +0000
+Cannot render console from 60.69.139.71! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ProductsController#about as HTML
+  Rendering products/about.html.erb within layouts/application
+  Rendered products/about.html.erb within layouts/application (5.1ms)
+  [1m[36mGenre Load (0.1ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/layouts/application.html.erb:62
+Completed 200 OK in 70ms (Views: 69.1ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/products" for 60.69.139.71 at 2021-07-24 03:34:01 +0000
+Cannot render console from 60.69.139.71! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ProductsController#index as HTML
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.9ms)[0m  [1m[34mSELECT  "products".* FROM "products" ORDER BY "products"."id" DESC LIMIT ? OFFSET ?[0m  [["LIMIT", 6], ["OFFSET", 0]]
+  ↳ app/views/products/index.html.erb:2
+  [1m[36mGenre Load (0.2ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/products/index.html.erb:36
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/products/index.html.erb:43
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "favorites" WHERE "favorites"."product_id" = ?[0m  [["product_id", 1]]
+  ↳ app/views/products/index.html.erb:47
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "comments" WHERE "comments"."product_id" = ?[0m  [["product_id", 1]]
+  ↳ app/views/products/index.html.erb:53
+  Rendered products/index.html.erb within layouts/application (64.6ms)
+  [1m[36mGenre Load (0.2ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/layouts/application.html.erb:62
+Completed 200 OK in 209ms (Views: 137.2ms | ActiveRecord: 3.2ms)
+
+
