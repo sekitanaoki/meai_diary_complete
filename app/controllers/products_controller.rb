@@ -27,7 +27,7 @@ class ProductsController < ApplicationController
 
   def index
     @product_images = Product.all
-    @product_images = Product.page(params[:page]).per(6).reverse_order
+    @product_images = Product.page(params[:page]).per(8).reverse_order
     # per(6).reverse_orderページ表示数/降順
   end
 

@@ -2090,3 +2090,371 @@ Processing by ProductsController#about as HTML
 Completed 200 OK in 53ms (Views: 52.5ms | ActiveRecord: 0.2ms)
 
 
+Started GET "/" for 60.69.156.155 at 2021-07-26 03:17:52 +0000
+Cannot render console from 60.69.156.155! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ vendor/cache/ruby/2.6.0/gems/activerecord-5.2.6/lib/active_record/log_subscriber.rb:98
+Processing by ProductsController#top as HTML
+  Rendering products/top.html.erb within layouts/application
+  Rendered simple_calendar/_month_calendar.html.erb (15.9ms)
+  Rendered products/top.html.erb within layouts/application (281.8ms)
+  [1m[36mGenre Load (0.2ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/layouts/application.html.erb:62
+Completed 200 OK in 400ms (Views: 390.6ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/" for 60.69.156.155 at 2021-07-26 03:17:52 +0000
+Cannot render console from 60.69.156.155! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ProductsController#top as HTML
+  Rendering products/top.html.erb within layouts/application
+  Rendered simple_calendar/_month_calendar.html.erb (6.8ms)
+  Rendered products/top.html.erb within layouts/application (11.7ms)
+  [1m[36mGenre Load (0.2ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/layouts/application.html.erb:62
+Completed 200 OK in 58ms (Views: 56.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/products" for 60.69.156.155 at 2021-07-26 03:17:56 +0000
+Cannot render console from 60.69.156.155! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ProductsController#index as HTML
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT  "products".* FROM "products" ORDER BY "products"."id" DESC LIMIT ? OFFSET ?[0m  [["LIMIT", 6], ["OFFSET", 0]]
+  ↳ app/views/products/index.html.erb:2
+  [1m[36mGenre Load (0.2ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/products/index.html.erb:36
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/products/index.html.erb:43
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "favorites" WHERE "favorites"."product_id" = ?[0m  [["product_id", 1]]
+  ↳ app/views/products/index.html.erb:47
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "comments" WHERE "comments"."product_id" = ?[0m  [["product_id", 1]]
+  ↳ app/views/products/index.html.erb:53
+  Rendered products/index.html.erb within layouts/application (61.7ms)
+  [1m[36mGenre Load (0.1ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/layouts/application.html.erb:62
+Completed 200 OK in 116ms (Views: 105.2ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/attachments/0bddc05ae812ecb5aee1395a74497dca898ca88d/store/7e4844cca46bc7c220a12a0177b6c68a240d3d3135776c7d7fc99145c1dd/product_image" for 60.69.156.155 at 2021-07-26 03:17:57 +0000
+Cannot render console from 60.69.156.155! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Refile::App: [2021-07-26 03:17:57 +0000] GET "/0bddc05ae812ecb5aee1395a74497dca898ca88d/store/7e4844cca46bc7c220a12a0177b6c68a240d3d3135776c7d7fc99145c1dd/product_image" 200 14.1ms
+
+Started GET "/products/new" for 60.69.156.155 at 2021-07-26 03:19:27 +0000
+Cannot render console from 60.69.156.155! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ProductsController#new as HTML
+  Rendering products/new.html.erb within layouts/application
+  [1m[36mGenre Load (0.1ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/products/new.html.erb:21
+  Rendered products/new.html.erb within layouts/application (17.1ms)
+  [1m[36mCACHE Genre Load (0.0ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/layouts/application.html.erb:62
+Completed 200 OK in 85ms (Views: 67.0ms | ActiveRecord: 1.2ms)
+
+
+Started POST "/products" for 60.69.156.155 at 2021-07-26 03:20:01 +0000
+Cannot render console from 60.69.156.155! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ProductsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"t7VCH/+9oDYcDgN9nCxk53a5BzD7J6T2YqwZTiYqHVsgkYrUrCXjLtGAsI+MtDl3VAzWWm2BQm4bRpWj4P7ghg==", "product"=>{"product_image"=>#<ActionDispatch::Http::UploadedFile:0x00007fd38c504d78 @tempfile=#<Tempfile:/tmp/RackMultipart20210726-13223-19azxpj.png>, @original_filename="logo7.png", @content_type="image/png", @headers="Content-Disposition: form-data; name=\"product[product_image]\"; filename=\"logo7.png\"\r\nContent-Type: image/png\r\n">, "time"=>"2021-07-26T13:19", "shop_name"=>"チョコ屋", "address"=>"東京都港区芝公園４丁目２−８", "menu_name"=>"チョコ", "genre_id"=>"9", "description"=>"チョコ"}, "commit"=>"投稿"}
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 60.69.156.155 at 2021-07-26 03:20:01 +0000
+Cannot render console from 60.69.156.155! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.4ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (16.1ms)
+  [1m[36mGenre Load (0.3ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/layouts/application.html.erb:62
+Completed 200 OK in 87ms (Views: 73.5ms | ActiveRecord: 0.9ms)
+
+
+Started POST "/users/sign_in" for 60.69.156.155 at 2021-07-26 03:20:16 +0000
+Cannot render console from 60.69.156.155! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"tl4j20Kv26FJA58/Ne+sfQXPNG4zqpJQnPN5tkZfUy6eTz1Hgwyi1hl3RlpsgsuxsF3+bS7+khgGatLBoUSPTw==", "user"=>{"email"=>"test@com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["email", "test@com"], ["LIMIT", 1]]
+  ↳ vendor/cache/ruby/2.6.0/gems/activerecord-5.2.6/lib/active_record/log_subscriber.rb:98
+Redirected to https://0a1ae132a0c24d7a9bd195a44dc9b027.vfs.cloud9.us-east-1.amazonaws.com/
+Completed 302 Found in 357ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 60.69.156.155 at 2021-07-26 03:20:16 +0000
+Cannot render console from 60.69.156.155! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ProductsController#top as HTML
+  Rendering products/top.html.erb within layouts/application
+  Rendered simple_calendar/_month_calendar.html.erb (31.7ms)
+  Rendered products/top.html.erb within layouts/application (39.4ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:43
+  [1m[36mGenre Load (0.1ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/layouts/application.html.erb:62
+Completed 200 OK in 95ms (Views: 93.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/products" for 60.69.156.155 at 2021-07-26 03:20:22 +0000
+Cannot render console from 60.69.156.155! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ProductsController#index as HTML
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT  "products".* FROM "products" ORDER BY "products"."id" DESC LIMIT ? OFFSET ?[0m  [["LIMIT", 8], ["OFFSET", 0]]
+  ↳ app/views/products/index.html.erb:2
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/products/index.html.erb:5
+  [1m[36mGenre Load (0.1ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/products/index.html.erb:36
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/products/index.html.erb:43
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "favorites" WHERE "favorites"."product_id" = ?[0m  [["product_id", 1]]
+  ↳ app/views/products/index.html.erb:47
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "comments" WHERE "comments"."product_id" = ?[0m  [["product_id", 1]]
+  ↳ app/views/products/index.html.erb:56
+  Rendered products/index.html.erb within layouts/application (38.7ms)
+  [1m[36mGenre Load (0.1ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/layouts/application.html.erb:62
+Completed 200 OK in 88ms (Views: 85.4ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/products/new" for 60.69.156.155 at 2021-07-26 03:20:24 +0000
+Cannot render console from 60.69.156.155! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ProductsController#new as HTML
+  Rendering products/new.html.erb within layouts/application
+  [1m[36mGenre Load (0.2ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/products/new.html.erb:21
+  Rendered products/new.html.erb within layouts/application (17.6ms)
+  [1m[36mUser Load (2.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:43
+  [1m[36mCACHE Genre Load (0.0ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/layouts/application.html.erb:62
+Completed 200 OK in 76ms (Views: 68.9ms | ActiveRecord: 2.1ms)
+
+
+Started POST "/products" for 60.69.156.155 at 2021-07-26 03:21:02 +0000
+Cannot render console from 60.69.156.155! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ProductsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"KT9Lv28y0Sr6m6wrcU2tBTqXLexDEcjNLYbu0Eh5nZREeYDpfDbz5cu1U4D5b+LLAQky6ZvAlONMsLU+bd5Xfw==", "product"=>{"product_image"=>#<ActionDispatch::Http::UploadedFile:0x00007fd3985e06f0 @tempfile=#<Tempfile:/tmp/RackMultipart20210726-13223-mmo2mz.jpeg>, @original_filename="お寿司.jpeg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"product[product_image]\"; filename=\"\xE3\x81\x8A\xE5\xAF\xBF\xE5\x8F\xB8.jpeg\"\r\nContent-Type: image/jpeg\r\n">, "time"=>"2021-07-26T13:20", "shop_name"=>"テスト", "address"=>"東京都港区芝公園４丁目２−８", "menu_name"=>"テスト", "genre_id"=>"4", "description"=>"テスト"}, "commit"=>"投稿"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ vendor/cache/ruby/2.6.0/gems/activerecord-5.2.6/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/products_controller.rb:21
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/products_controller.rb:21
+  [1m[36mGenre Load (0.1ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/products_controller.rb:21
+  [1m[36mProduct Create (1.5ms)[0m  [1m[32mINSERT INTO "products" ("user_id", "genre_id", "product_image_id", "shop_name", "description", "menu_name", "address", "time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["user_id", 1], ["genre_id", 4], ["product_image_id", "a4f0ffcfc4e43421b0832e1db18a91211cb304b01927d6822235d1512d9f"], ["shop_name", "テスト"], ["description", "テスト"], ["menu_name", "テスト"], ["address", "東京都港区芝公園４丁目２−８"], ["time", "2021-07-26 13:20:00"], ["created_at", "2021-07-26 03:21:02.113058"], ["updated_at", "2021-07-26 03:21:02.113058"]]
+  ↳ app/controllers/products_controller.rb:21
+  [1m[35m (3.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/products_controller.rb:21
+Redirected to https://0a1ae132a0c24d7a9bd195a44dc9b027.vfs.cloud9.us-east-1.amazonaws.com/products
+Completed 302 Found in 26ms (ActiveRecord: 5.8ms)
+
+
+Started GET "/products" for 60.69.156.155 at 2021-07-26 03:21:02 +0000
+Cannot render console from 60.69.156.155! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ProductsController#index as HTML
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.1ms)[0m  [1m[34mSELECT  "products".* FROM "products" ORDER BY "products"."id" DESC LIMIT ? OFFSET ?[0m  [["LIMIT", 8], ["OFFSET", 0]]
+  ↳ app/views/products/index.html.erb:2
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/products/index.html.erb:5
+  [1m[36mGenre Load (0.1ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/views/products/index.html.erb:36
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/products/index.html.erb:43
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "favorites" WHERE "favorites"."product_id" = ?[0m  [["product_id", 2]]
+  ↳ app/views/products/index.html.erb:47
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "comments" WHERE "comments"."product_id" = ?[0m  [["product_id", 2]]
+  ↳ app/views/products/index.html.erb:56
+  [1m[36mGenre Load (0.1ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/products/index.html.erb:36
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/products/index.html.erb:43
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "favorites" WHERE "favorites"."product_id" = ?[0m  [["product_id", 1]]
+  ↳ app/views/products/index.html.erb:47
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "comments" WHERE "comments"."product_id" = ?[0m  [["product_id", 1]]
+  ↳ app/views/products/index.html.erb:56
+  Rendered products/index.html.erb within layouts/application (28.8ms)
+  [1m[36mGenre Load (0.2ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/layouts/application.html.erb:62
+Completed 200 OK in 84ms (Views: 81.5ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/attachments/7d5086b1e77c663d9a14a28f0dfb631c9d9aaca5/store/a4f0ffcfc4e43421b0832e1db18a91211cb304b01927d6822235d1512d9f/product_image" for 60.69.156.155 at 2021-07-26 03:21:02 +0000
+Cannot render console from 60.69.156.155! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Refile::App: [2021-07-26 03:21:02 +0000] GET "/7d5086b1e77c663d9a14a28f0dfb631c9d9aaca5/store/a4f0ffcfc4e43421b0832e1db18a91211cb304b01927d6822235d1512d9f/product_image" 200 7.3ms
+
+Started GET "/products/ranking" for 60.69.156.155 at 2021-07-26 03:21:14 +0000
+Cannot render console from 60.69.156.155! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ProductsController#ranking as HTML
+DEPRECATION WARNING: Dangerous query method (method whose arguments are used as raw SQL) called with non-attribute argument(s): "count(product_id) desc". Non-attribute arguments will be disallowed in Rails 6.0. This method should not be called with user-provided values, such as request parameters or model attributes. Known-safe values can be passed by wrapping them in Arel.sql(). (called from ranking at /home/ec2-user/environment/meal_diary/app/controllers/products_controller.rb:11)
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT  "favorites"."product_id" FROM "favorites" GROUP BY "favorites"."product_id" ORDER BY count(product_id) desc LIMIT ?[0m  [["LIMIT", 3]]
+  ↳ app/controllers/products_controller.rb:11
+  [1m[36mProduct Load (0.1ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/products_controller.rb:11
+  Rendering products/ranking.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/products/ranking.html.erb:6
+  Rendered products/ranking.html.erb within layouts/application (6.3ms)
+  [1m[36mGenre Load (0.1ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/layouts/application.html.erb:62
+Completed 200 OK in 86ms (Views: 76.7ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/products/new" for 60.69.156.155 at 2021-07-26 03:21:16 +0000
+Cannot render console from 60.69.156.155! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ProductsController#new as HTML
+  Rendering products/new.html.erb within layouts/application
+  [1m[36mGenre Load (0.1ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/products/new.html.erb:21
+  Rendered products/new.html.erb within layouts/application (9.6ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:43
+  [1m[36mCACHE Genre Load (0.0ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/layouts/application.html.erb:62
+Completed 200 OK in 150ms (Views: 147.1ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/products" for 60.69.156.155 at 2021-07-26 03:21:40 +0000
+Cannot render console from 60.69.156.155! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ProductsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"gIIX63YRcHrJi69Yb4E1TPG2TQASZMADTa1c2jfThT3txNy9ZRVStfilUPPno3qCyihSBcq1nC0smwc0EnRP1g==", "product"=>{"product_image"=>#<ActionDispatch::Http::UploadedFile:0x00007fd388538be0 @tempfile=#<Tempfile:/tmp/RackMultipart20210726-13223-10mqmf2.jpeg>, @original_filename="パン２.jpeg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"product[product_image]\"; filename=\"\xE3\x83\x8F\xE3\x82\x9A\xE3\x83\xB3\xEF\xBC\x92.jpeg\"\r\nContent-Type: image/jpeg\r\n">, "time"=>"2021-07-26T14:21", "shop_name"=>"テスト", "address"=>"東京都港区芝公園４丁目２−８", "menu_name"=>"テスト", "genre_id"=>"4", "description"=>"テスト"}, "commit"=>"投稿"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ vendor/cache/ruby/2.6.0/gems/activerecord-5.2.6/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/products_controller.rb:21
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/products_controller.rb:21
+  [1m[36mGenre Load (0.1ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/products_controller.rb:21
+  [1m[36mProduct Create (1.9ms)[0m  [1m[32mINSERT INTO "products" ("user_id", "genre_id", "product_image_id", "shop_name", "description", "menu_name", "address", "time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["user_id", 1], ["genre_id", 4], ["product_image_id", "c529e7345b93bca629acd32cdea8a381b340bf734ef1521193db12c5f6a5"], ["shop_name", "テスト"], ["description", "テスト"], ["menu_name", "テスト"], ["address", "東京都港区芝公園４丁目２−８"], ["time", "2021-07-26 14:21:00"], ["created_at", "2021-07-26 03:21:40.069056"], ["updated_at", "2021-07-26 03:21:40.069056"]]
+  ↳ app/controllers/products_controller.rb:21
+  [1m[35m (3.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/products_controller.rb:21
+Redirected to https://0a1ae132a0c24d7a9bd195a44dc9b027.vfs.cloud9.us-east-1.amazonaws.com/products
+Completed 302 Found in 26ms (ActiveRecord: 5.7ms)
+
+
+Started GET "/products" for 60.69.156.155 at 2021-07-26 03:21:40 +0000
+Cannot render console from 60.69.156.155! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ProductsController#index as HTML
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.1ms)[0m  [1m[34mSELECT  "products".* FROM "products" ORDER BY "products"."id" DESC LIMIT ? OFFSET ?[0m  [["LIMIT", 8], ["OFFSET", 0]]
+  ↳ app/views/products/index.html.erb:2
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/products/index.html.erb:5
+  [1m[36mGenre Load (0.1ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/views/products/index.html.erb:36
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/products/index.html.erb:43
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "favorites" WHERE "favorites"."product_id" = ?[0m  [["product_id", 3]]
+  ↳ app/views/products/index.html.erb:47
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "comments" WHERE "comments"."product_id" = ?[0m  [["product_id", 3]]
+  ↳ app/views/products/index.html.erb:56
+  [1m[36mCACHE Genre Load (0.0ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/views/products/index.html.erb:36
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/products/index.html.erb:43
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "favorites" WHERE "favorites"."product_id" = ?[0m  [["product_id", 2]]
+  ↳ app/views/products/index.html.erb:47
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "comments" WHERE "comments"."product_id" = ?[0m  [["product_id", 2]]
+  ↳ app/views/products/index.html.erb:56
+  [1m[36mGenre Load (0.1ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/products/index.html.erb:36
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/products/index.html.erb:43
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "favorites" WHERE "favorites"."product_id" = ?[0m  [["product_id", 1]]
+  ↳ app/views/products/index.html.erb:47
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "comments" WHERE "comments"."product_id" = ?[0m  [["product_id", 1]]
+  ↳ app/views/products/index.html.erb:56
+  Rendered products/index.html.erb within layouts/application (45.0ms)
+  [1m[36mGenre Load (0.1ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/layouts/application.html.erb:62
+Completed 200 OK in 123ms (Views: 119.6ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/attachments/f5bdadd178db10997713eb2cc3756e405cd46673/store/c529e7345b93bca629acd32cdea8a381b340bf734ef1521193db12c5f6a5/product_image" for 60.69.156.155 at 2021-07-26 03:21:40 +0000
+Cannot render console from 60.69.156.155! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Refile::App: [2021-07-26 03:21:40 +0000] GET "/f5bdadd178db10997713eb2cc3756e405cd46673/store/c529e7345b93bca629acd32cdea8a381b340bf734ef1521193db12c5f6a5/product_image" 200 5.0ms
+
+Started GET "/products/new" for 60.69.156.155 at 2021-07-26 03:21:42 +0000
+Cannot render console from 60.69.156.155! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ProductsController#new as HTML
+  Rendering products/new.html.erb within layouts/application
+  [1m[36mGenre Load (1.4ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/products/new.html.erb:21
+  Rendered products/new.html.erb within layouts/application (8.5ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:43
+  [1m[36mCACHE Genre Load (0.0ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/layouts/application.html.erb:62
+Completed 200 OK in 120ms (Views: 117.3ms | ActiveRecord: 1.6ms)
+
+
+Started POST "/products" for 60.69.156.155 at 2021-07-26 03:22:16 +0000
+Cannot render console from 60.69.156.155! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ProductsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"zMbwFzCeYnOnqVelNwbuPGcNGwZWHGerAnjWc/twbQmhgDtBI5pAvJaHqA6/JKHyXJMEA47NO4VjTo2d3ten4g==", "product"=>{"product_image"=>#<ActionDispatch::Http::UploadedFile:0x000000000555f988 @tempfile=#<Tempfile:/tmp/RackMultipart20210726-13223-19gyoue.jpeg>, @original_filename="about3.jpeg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"product[product_image]\"; filename=\"about3.jpeg\"\r\nContent-Type: image/jpeg\r\n">, "time"=>"2021-07-26T12:24", "shop_name"=>"テスト", "address"=>"テスト", "menu_name"=>"テスト", "genre_id"=>"1", "description"=>"て"}, "commit"=>"投稿"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ vendor/cache/ruby/2.6.0/gems/activerecord-5.2.6/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/products_controller.rb:21
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/products_controller.rb:21
+  [1m[36mGenre Load (0.1ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/products_controller.rb:21
+  [1m[36mProduct Create (0.6ms)[0m  [1m[32mINSERT INTO "products" ("user_id", "genre_id", "product_image_id", "shop_name", "description", "menu_name", "address", "time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["user_id", 1], ["genre_id", 1], ["product_image_id", "5ab629aacc9d780cd8ce87cfd719fe6b829f7b083e4b55c187aed85b95d4"], ["shop_name", "テスト"], ["description", "て"], ["menu_name", "テスト"], ["address", "テスト"], ["time", "2021-07-26 12:24:00"], ["created_at", "2021-07-26 03:22:16.415889"], ["updated_at", "2021-07-26 03:22:16.415889"]]
+  ↳ app/controllers/products_controller.rb:21
+  [1m[35m (3.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/products_controller.rb:21
+Redirected to https://0a1ae132a0c24d7a9bd195a44dc9b027.vfs.cloud9.us-east-1.amazonaws.com/products
+Completed 302 Found in 18ms (ActiveRecord: 3.9ms)
+
+
+Started GET "/products" for 60.69.156.155 at 2021-07-26 03:22:16 +0000
+Cannot render console from 60.69.156.155! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ProductsController#index as HTML
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.1ms)[0m  [1m[34mSELECT  "products".* FROM "products" ORDER BY "products"."id" DESC LIMIT ? OFFSET ?[0m  [["LIMIT", 8], ["OFFSET", 0]]
+  ↳ app/views/products/index.html.erb:2
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/products/index.html.erb:5
+  [1m[36mGenre Load (0.1ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/products/index.html.erb:36
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/products/index.html.erb:43
+  [1m[35m (2.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "favorites" WHERE "favorites"."product_id" = ?[0m  [["product_id", 4]]
+  ↳ app/views/products/index.html.erb:47
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "comments" WHERE "comments"."product_id" = ?[0m  [["product_id", 4]]
+  ↳ app/views/products/index.html.erb:56
+  [1m[36mGenre Load (0.1ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/views/products/index.html.erb:36
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/products/index.html.erb:43
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "favorites" WHERE "favorites"."product_id" = ?[0m  [["product_id", 3]]
+  ↳ app/views/products/index.html.erb:47
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT COUNT(*) FROM "comments" WHERE "comments"."product_id" = ?[0m  [["product_id", 3]]
+  ↳ app/views/products/index.html.erb:56
+  [1m[36mCACHE Genre Load (0.0ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/views/products/index.html.erb:36
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/products/index.html.erb:43
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "favorites" WHERE "favorites"."product_id" = ?[0m  [["product_id", 2]]
+  ↳ app/views/products/index.html.erb:47
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "comments" WHERE "comments"."product_id" = ?[0m  [["product_id", 2]]
+  ↳ app/views/products/index.html.erb:56
+  [1m[36mGenre Load (0.1ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/products/index.html.erb:36
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/products/index.html.erb:43
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "favorites" WHERE "favorites"."product_id" = ?[0m  [["product_id", 1]]
+  ↳ app/views/products/index.html.erb:47
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "comments" WHERE "comments"."product_id" = ?[0m  [["product_id", 1]]
+  ↳ app/views/products/index.html.erb:56
+  Rendered products/index.html.erb within layouts/application (44.4ms)
+  [1m[36mGenre Load (0.1ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/layouts/application.html.erb:62
+Completed 200 OK in 94ms (Views: 88.0ms | ActiveRecord: 4.5ms)
+
+
+Started GET "/attachments/6e2c439058e629e56c3cb9cfee9f2daa4eeae718/store/5ab629aacc9d780cd8ce87cfd719fe6b829f7b083e4b55c187aed85b95d4/product_image" for 60.69.156.155 at 2021-07-26 03:22:17 +0000
+Cannot render console from 60.69.156.155! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Refile::App: [2021-07-26 03:22:17 +0000] GET "/6e2c439058e629e56c3cb9cfee9f2daa4eeae718/store/5ab629aacc9d780cd8ce87cfd719fe6b829f7b083e4b55c187aed85b95d4/product_image" 200 3.2ms
+
